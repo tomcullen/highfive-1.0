@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to "Delete Contact", contact_url, :method => :delete %>
+<p>
+  <b>Firstname:</b>
+  <%= @contact.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @contact.lastname %>
+</p>
+
+<p>
+  <b>Jobtitle:</b>
+  <%= @contact.jobtitle %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @contact.email %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @contact.twitter %>
+</p>
+
+<p>
+  <b>Linkedin:</b>
+  <%= @contact.linkedin %>
+</p>
+
+<p>
+  <b>Facebook:</b>
+  <%= @contact.facebook %>
+</p>
+
+<p>
+  <b>Mainphone:</b>
+  <%= @contact.mainphone %>
+</p>
+
+<p>
+  <b>Workphone:</b>
+  <%= @contact.workphone %>
+</p>
+
+<p>
+  <b>Faxnumber:</b>
+  <%= @contact.faxnumber %>
+</p>
+
+<p>
+  <b>Meetups:</b>
+  <%= @contact.meetups %>
+</p>
+
+<p>
+  <b>Meetup url:</b>
+  <%= @contact.meetup_url %>
+</p>
+
+<p>
+  <b>Otherinfo:</b>
+  <%= @contact.otherinfo %>
+</p>
+
+<p>
+  <b>Job connection:</b>
+  <%= @contact.job_connection_id %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @contact.company_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @contact.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
+
