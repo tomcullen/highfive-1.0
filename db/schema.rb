@@ -1,4 +1,4 @@
- t# encoding: UTF-8
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111128205701) do
+ActiveRecord::Schema.define(:version => 20111129193119) do
 
   create_table "contacts", :force => true do |t|
     t.string   "firstname"
@@ -30,6 +30,21 @@ ActiveRecord::Schema.define(:version => 20111128205701) do
     t.integer  "job_connection_id"
     t.integer  "company_id"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "jobs", :force => true do |t|
+    t.string   "jobtitle"
+    t.string   "jobdescription"
+    t.string   "postinglink"
+    t.datetime "dateofposting"
+    t.integer  "salary"
+    t.string   "careerfield"
+    t.datetime "dateappliedto"
+    t.integer  "company_id"
+    t.integer  "user_id"
+    t.integer  "job_connection_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,16 @@
+<h2>Jobs index page</h2>
+
+
+
+
+<% @job.each do |f| %>
+<p><%= link_to f.jobtitle, job_url(f) %> | 
+<%= f.jobdescription %> | 
+<%= f.postinglink %> | 
+<%= f.dateofposting %> |  
+<%= f.salary %> | 
+<%= f.careerfield %> | 
+<%= f.dateappliedto %> </p>
+<% end %>
+
+<p><%= link_to "Add New Job Posting", new_job_url %></p>

@@ -6,8 +6,8 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-
-<h1><%= link_to "HIGH FIVE", contacts_url  %></h1>
+<h1>HIGH FIVE</h1>
+<h2><%= link_to "CONTACTS", contacts_url  %> <%= link_to "JOBS", jobs_url %></h2>
 <body>
 
 <%= yield %>
