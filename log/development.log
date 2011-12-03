@@ -25510,3 +25510,3566 @@ ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"
   
 
 Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-11-30 14:09:19 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Rendered companies/edit.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 89ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /application.css - 200 OK (34ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /contacts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /jobs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /companies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /contacts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /jobs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-11-30 14:09:20 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (1.9ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:27 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-11-30 14:09:30 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Rendered companies/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-11-30 14:09:31 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Rendered companies/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-11-30 14:09:36 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2011-11-30 16:16:40 -0600
+  Processing by CompaniesController#new as HTML
+Rendered companies/_form.html.erb (51.2ms)
+Rendered companies/new.html.erb within layouts/application (113.2ms)
+Completed 200 OK in 147ms (Views: 142.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /jobs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 16:16:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 16:16:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-11-30 16:16:42 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+  Processing by CompaniesController#index as HTML
+  [1m[35mCompany Load (0.6ms)[0m  SELECT "companies".* FROM "companies" 
+Rendered companies/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:04 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-11-30 16:17:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-11-30 16:17:14 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Rendered companies/_form.html.erb (29.6ms)
+Rendered companies/edit.html.erb within layouts/application (30.7ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for (@company) do |f| %>
+    2: <p>Company Name <%= f.text_field :companyname %>
+    3: Website <%= f.text_field :website %>
+    4: Industry <%= f.text_field :industry %>
+  app/views/companies/_form.html.erb:1:in `_app_views_companies__form_html_erb__76799554114148192_70126710223840'
+  app/views/companies/edit.html.erb:4:in `_app_views_companies_edit_html_erb__2372674548825329280_70126717384220'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 08:53:12 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Rendered companies/_form.html.erb (5.1ms)
+Rendered companies/edit.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 149ms
+
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007f8f4b1f4640>):
+    1: <%= form_for (@company) do |f| %>
+    2: <p>Company Name <%= f.text_field :companyname %>
+    3: Website <%= f.text_field :website %>
+    4: Industry <%= f.text_field :industry %>
+  app/views/companies/_form.html.erb:1:in `_app_views_companies__form_html_erb__76799554114148192_70126710223840'
+  app/views/companies/edit.html.erb:4:in `_app_views_companies_edit_html_erb__2372674548825329280_70126717384220'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 08:55:40 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.7ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 103ms (Views: 80.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /contacts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /jobs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /companies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /contacts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /jobs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 08:55:41 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 08:55:42 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Rendered companies/_form.html.erb (17.7ms)
+Rendered companies/edit.html.erb within layouts/application (27.8ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `to_key' for #<Class:0x007f965d3a2960>):
+    1: <%= form_for (@company) do |f| %>
+    2: <p>Company Name <%= f.text_field :companyname %>
+    3: Website <%= f.text_field :website %>
+    4: Industry <%= f.text_field :industry %>
+  app/views/companies/_form.html.erb:1:in `_app_views_companies__form_html_erb__928683700739250716_70141886151620'
+  app/views/companies/edit.html.erb:4:in `_app_views_companies_edit_html_erb___249306106665756818_70141891595360'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 08:56:10 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `post' for #<Class:0x007f9659a97b70>):
+  app/controllers/companies_controller.rb:7:in `edit'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 08:56:12 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `post' for #<Class:0x007f965d3778a0>):
+  app/controllers/companies_controller.rb:7:in `edit'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/_form.html.erb (9.8ms)
+Rendered companies/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 08:56:33 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 08:56:44 -0600
+
+AbstractController::ActionNotFound (The action 'update' could not be found for CompaniesController):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.4ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 08:57:27 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template companies/update, application/update with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views"
+):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 08:57:44 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template companies/update, application/update with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views"
+):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 08:57:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/_form.html.erb (31.9ms)
+Rendered companies/edit.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 08:57:51 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 08:57:57 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template companies/update, application/update with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views"
+):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 08:58:16 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template companies/update, application/update with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views"
+):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 08:59:02 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Completed 500 Internal Server Error in 12ms
+
+ActionView::MissingTemplate (Missing template companies/update, application/update with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views"
+):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:00:41 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:06:42 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/_form.html.erb (33.1ms)
+Rendered companies/edit.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:06:43 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 09:06:48 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/companies_controller.rb:26:in `update'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 09:07:23 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `stringify_keys' for "15":String):
+  app/controllers/companies_controller.rb:26:in `update'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.8ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:07:27 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:07:28 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/_form.html.erb (11.5ms)
+Rendered companies/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:07:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 09:07:35 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `stringify_keys' for "15":String):
+  app/controllers/companies_controller.rb:26:in `update'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:07 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:09:08 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/_form.html.erb (8.8ms)
+Rendered companies/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:09:09 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 09:09:14 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhound", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35m (0.4ms)[0m  UPDATE "companies" SET "companyname" = 'Greyhound', "updated_at" = '2011-12-01 15:09:14.247479' WHERE "companies"."id" = 15
+Completed 500 Internal Server Error in 55ms
+
+ActionView::MissingTemplate (Missing template companies/update, application/update with {:handlers=>[:erb, :builder, :coffee], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views"
+):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:09:19 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:19 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:19 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:19 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:19 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:09:19 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:09:20 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:11:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 09:11:27 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/_form.html.erb (8.8ms)
+Rendered companies/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:11:28 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 09:11:30 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhounds", "website"=>"www.bus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36m (0.3ms)[0m  [1mUPDATE "companies" SET "companyname" = 'Greyhounds', "updated_at" = '2011-12-01 15:11:30.982873' WHERE "companies"."id" = 15[0m
+Redirected to http://localhost:3000/companies
+Completed 302 Found in 13ms
+
+
+Started GET "/companies" for 127.0.0.1 at 2011-12-01 09:11:30 -0600
+  Processing by CompaniesController#index as HTML
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" 
+Rendered companies/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:11:31 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/companies/15" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+  Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered companies/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:11:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/companies/15/edit" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+  Processing by CompaniesController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", "15"]]
+Rendered companies/_form.html.erb (35.0ms)
+Rendered companies/edit.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:11:37 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started PUT "/companies/15" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+  Processing by CompaniesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tVfRkkSOGbuDt+4rfi6tqZz+kRnGKv1E2SaFdfS1fQ=", "company"=>{"companyname"=>"Greyhounds", "website"=>"www.greyhoundbus.com", "industry"=>"Transportation", "companynotes"=>"we have awesome busses with wifi"}, "commit"=>"Update Company", "id"=>"15"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35m (0.3ms)[0m  UPDATE "companies" SET "website" = 'www.greyhoundbus.com', "updated_at" = '2011-12-01 15:11:46.796032' WHERE "companies"."id" = 15
+Redirected to http://localhost:3000/companies
+Completed 302 Found in 13ms
+
+
+Started GET "/companies" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+  Processing by CompaniesController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" [0m
+Rendered companies/index.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:11:46 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:15:33 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 09:19:42 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 09:19:42 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 09:19:42 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 09:19:42 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 09:19:42 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 09:19:42 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 09:19:43 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 09:26:21 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (62.5ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007f965c00e728>:0x007f965b1e7a00>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 09:30:44 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (70.0ms)
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007f965d44ec60>:0x007f965d42a950>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 09:31:51 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (63.8ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007f965b0e7420>:0x007f965b0e2ec0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 09:31:56 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (60.5ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007f965d3823e0>:0x007f965d374150>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateContacts (20111128205701)
+Migrating to CreateJobs (20111129193119)
+Migrating to CreateCompanies (20111130021931)
+Migrating to CreateJobconnections (20111201154952)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "jobconnections" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "note" varchar(255), "job_id" integer, "contact_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111201154952')
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("companies")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("contacts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("jobconnections")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("jobs")
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:21:21 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (59.7ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007f965aa325d0>:0x007f965aa2aec0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141875270580'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:21:39 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007f965c6e3e18>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141886233160'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141886233160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:23:46 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `jobconnection' for #<Contact:0x007f965d30f7a0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141892602440'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141892602440'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:23:52 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `jobconnection' for #<Contact:0x007f965d4556c8>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141893238140'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141893238140'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:24:56 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (60.4ms)
+Completed 500 Internal Server Error in 66ms
+
+ActionView::Template::Error (undefined method `company' for nil:NilClass):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141871010880'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141871010880'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:25:33 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (undefined method `job' for nil:NilClass):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.job.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141874571720'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141874571720'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:28:19 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (43.8ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined method `job' for nil:NilClass):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.job.note %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141871190220'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141871190220'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:28:26 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `note' for nil:NilClass):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.note %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___852502701259668235_70141874810480'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___852502701259668235_70141874810480'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-01 10:30:04 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:31:07 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/models/contact.rb:3: syntax error, unexpected ':', expecting keyword_end
+  belongs_to :job :through => :jobconnection
+                   ^):
+  app/controllers/contacts_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 10:31:22 -0600
+
+ArgumentError (Unknown key: through):
+  app/models/contact.rb:3:in `<class:Contact>'
+  app/models/contact.rb:1:in `<top (required)>'
+  app/controllers/contacts_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 22:07:09 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.7ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (60.2ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (undefined method `jobconnection' for #<Contact:0x007fe5ff81b518>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312894113380'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312894113380'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 22:07:51 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (62.7ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined local variable or method `jobconnection' for #<#<Class:0x007fe5ffe488a0>:0x007fe5ffe1dc68>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= jobconnection.job.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908569440'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908569440'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-01 22:26:32 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (58.3ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined local variable or method `jobconnection' for #<#<Class:0x007fe5fbea9f50>:0x007fe5fbe9b478>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= jobconnection.job.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908569440'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908569440'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 07:31:23 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (97.7ms)
+Completed 500 Internal Server Error in 105ms
+
+ActionView::Template::Error (undefined local variable or method `job' for #<#<Class:0x007fe5ffc6e020>:0x007fe5ffc644f8>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= job.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312907697940'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312907697940'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 07:57:25 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (93.0ms)
+Completed 500 Internal Server Error in 101ms
+
+ActionView::Template::Error (undefined local variable or method `job' for #<#<Class:0x007fe5fbd0abb8>:0x007fe5fbcd2308>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= job.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312907697940'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312907697940'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 07:57:39 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (64.9ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (undefined local variable or method `contacts' for #<#<Class:0x007fe5ff86df70>:0x007fe5ff865960>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contacts.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312905612800'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312905612800'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 07:57:44 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `title' for #<Contact:0x007fe5ffe93da0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908786540'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908786540'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 07:58:09 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /contacts.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /jobs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /jquery.js - 200 OK (43ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /companies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /contacts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /jobs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+Served asset /application.js - 200 OK (13ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 07:58:10 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-12-02 08:26:56 -0600
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.8ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (79.6ms)
+Completed 200 OK in 100ms (Views: 94.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 16:36:43 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 16:56:25 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (49.6ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined method `companytitle' for #<Contact:0x007fe5fbe826d0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companytitle %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312875588120'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312875588120'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:05:55 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5fe053390>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312889387360'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312889387360'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:06:42 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fe5ff865028>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.company.companyname %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312905473320'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312905473320'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:06:51 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (15.4ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5ffb3d520>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312906972100'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312906972100'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:10:40 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5ffd8c128>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname(contact) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908203340'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908203340'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:10:54 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fe5ffe4a3a8>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.company.companyname(contact) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908608800'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908608800'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:11:38 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (38.9ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fe5fbe384e0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.company.companyname(contact) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908608800'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908608800'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:15:26 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (41.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fe5fd8e4730>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.company.companyname(contact) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312889082760'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312889082760'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:21:20 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (82.3ms)
+Completed 500 Internal Server Error in 88ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007fe5fd938fb0>:0x007fe5fd9351f8>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= company.name %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312889261980'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312889261980'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:22:11 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `title' for #<Contact:0x007fe5ffd7db28>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.title %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908143420'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908143420'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:22:42 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined method `jobconnection' for #<Contact:0x007fe5ffe6dc90>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.jobconnection.note %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908614460'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908614460'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 17:23:40 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:24:47 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5fb24d1d0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312881711860'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312881711860'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:27:27 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (40.1ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fe5fd8da820>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.company.companyname %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312881657740'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312881657740'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateContacts (20111128205701)
+Migrating to CreateJobs (20111129193119)
+Migrating to CreateCompanies (20111130021931)
+Migrating to CreateJobconnections (20111201154952)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("companies")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("contacts")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("jobconnections")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("jobs")[0m
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:31:23 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (68.9ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined local variable or method `contact' for #<#<Class:0x007fe5fd92bc20>:0x007fe5fd928070>):
+    13:     <th>Mainphone</th>
+    14: 
+    15:   </tr>
+    16:   <%= contact %>
+    17: 
+    18: <% @contacts.each do |contact| %>
+    19:   <tr>
+  app/views/contacts/index.html.erb:16:in `_app_views_contacts_index_html_erb___2781701387455268174_70312889235240'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:32:15 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fe5ffd54c00>):
+    18: <% @contacts.each do |contact| %>
+    19:   <tr>
+    20:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    21:     <td><%= contact.company.companyname %></td>
+    22:     <td><%= contact.company_id %></td>
+    23:     <td><%= contact.jobtitle %></td>
+    24:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:21:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312908115160'
+  app/views/contacts/index.html.erb:18:in `each'
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908115160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:35:39 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `company' for #<Class:0x007fe5fd8ef658>):
+    13:     <th>Mainphone</th>
+    14: 
+    15:   </tr>
+    16:   <%= Contact.company %>
+    17: 
+    18: <% @contacts.each do |contact| %>
+    19:   <tr>
+  app/views/contacts/index.html.erb:16:in `_app_views_contacts_index_html_erb___2781701387455268174_70312908610180'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:35:45 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5fd935108>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312889248260'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312889248260'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:36:02 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5fe2aacb0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname(params[:contact]) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312893911160'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312893911160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:36:10 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5ffa2dc98>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname(params[:id]) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312906296520'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312906296520'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:36:26 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (17.7ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5ffcfb088>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname(params[:company_id]) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312907915400'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312907915400'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:40:44 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `companyname' for #<Contact:0x007fe5ffe1ddd0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.companyname(params[:company_id]) %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312907915400'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312907915400'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:40:57 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `salary' for #<Contact:0x007fe5fbdc8aa0>):
+    17: <% @contacts.each do |contact| %>
+    18:   <tr>
+    19:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    20:     <td><%= contact.salary %></td>
+    21:     <td><%= contact.company_id %></td>
+    22:     <td><%= contact.jobtitle %></td>
+    23:     <td><%= contact.meetups %></td>
+  app/views/contacts/index.html.erb:20:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312892985500'
+  app/views/contacts/index.html.erb:17:in `each'
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312892985500'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 17:42:03 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:48:59 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Con):
+    14: 
+    15:   </tr>
+    16:   
+    17:   <%= Con %>
+    18:   
+    19: 
+    20: <% @contacts.each do |contact| %>
+  app/views/contacts/index.html.erb:17:in `_app_views_contacts_index_html_erb___2781701387455268174_70312869350980'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 17:49:09 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 17:49:20 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-02 18:06:05 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:06:53 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (66.3ms)
+Completed 500 Internal Server Error in 73ms
+
+ActionView::Template::Error (undefined local variable or method `company' for #<#<Class:0x007fe5ffc5c208>:0x007fe5ffc203e8>):
+    19: <% @contacts.each do |contact| %>
+    20:   <tr>
+    21:     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    22:     <td><%= company.companyname %></td>
+    23:     <td><%= contact.jobtitle %></td>
+    24:     <td><%= contact.meetups %></td>
+    25:     <td><%= contact.meetup_url %></td>
+  app/views/contacts/index.html.erb:22:in `block in _app_views_contacts_index_html_erb___2781701387455268174_70312907568040'
+  app/views/contacts/index.html.erb:19:in `each'
+  app/views/contacts/index.html.erb:19:in `_app_views_contacts_index_html_erb___2781701387455268174_70312907568040'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:35:26 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (61.6ms)
+Completed 500 Internal Server Error in 94ms
+
+ActionView::Template::Error (undefined method `company' for #<Contact:0x007fd97ce88b60>):
+    16:   
+    17:   
+    18: <%= @contacts.each do |f| %>
+    19: <%= f.company.companyname %>
+    20: <% end %>
+    21: 
+    22: 
+  app/views/contacts/index.html.erb:19:in `block in _app_views_contacts_index_html_erb___891098298096225560_70286037442180'
+  app/views/contacts/index.html.erb:18:in `each'
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___891098298096225560_70286037442180'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:39:07 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.1ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (45.1ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionView::Template::Error (undefined method `jobconnection' for #<Array:0x007fd97a21c478>):
+    15:   </tr>
+    16:   
+    17:   
+    18: <%= @contacts.jobconnection.each do |f| %>
+    19: <%= f.company.companyname %>
+    20: <% end %>
+    21: 
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___891098298096225560_70286016487220'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:39:37 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (42.4ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `jobconnections' for #<Array:0x007fd97a3b7dc8>):
+    15:   </tr>
+    16:   
+    17:   
+    18: <%= @contacts.jobconnections.each do |f| %>
+    19: <%= f.company.companyname %>
+    20: <% end %>
+    21: 
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___891098298096225560_70286017520160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:42:56 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `jobconnections' for #<Array:0x007fd97c8a1ff8>):
+    15:   </tr>
+    16:   
+    17:   
+    18: <%= @contacts.jobconnections.each do |f| %>
+    19: <%= f.company.companyname %>
+    20: <% end %>
+    21: 
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___891098298096225560_70286017520160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 18:43:15 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+Rendered contacts/index.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `jobconnections' for #<Array:0x007fd97da4e238>):
+    15:   </tr>
+    16:   
+    17:   
+    18: <%= @contacts.jobconnections.each do |f| %>
+    19: <%= f.company.companyname %>
+    20: <% end %>
+    21: 
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___891098298096225560_70286017520160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-02 19:07:06 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+Rendered contacts/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `jobconnections' for #<Array:0x007fd97dd54d38>):
+    15:   </tr>
+    16:   
+    17:   
+    18: <%= @contacts.jobconnections.each do |f| %>
+    19: <%= f.company.companyname %>
+    20: <% end %>
+    21: 
+  app/views/contacts/index.html.erb:18:in `_app_views_contacts_index_html_erb___891098298096225560_70286017520160'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.5ms)

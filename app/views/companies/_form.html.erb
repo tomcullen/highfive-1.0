@@ -1,0 +1,7 @@
+<%= form_for (@company) do |f| %>
+<p>Company Name <%= f.text_field :companyname %>
+Website <%= f.text_field :website %>
+Industry <%= f.text_field :industry %>
+Company Notes<%= f.text_field :companynotes %></p>
+<%= f.submit %>
+<% end %>

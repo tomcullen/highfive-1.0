@@ -4,10 +4,12 @@ class CompaniesController < ApplicationController
   end
 
   def edit
+    @company = Company.find(params[:id])
   end
 
   def index
     @company = Company.all
+    #rel@contact = @company.contacts
   end
 
   def show
@@ -16,6 +18,13 @@ class CompaniesController < ApplicationController
   
   def create
     @company = Company.new(params[:company])
+    @company.save
+    redirect_to companies_url
+  end
+  
+  def update
+    @company = Company.find(params[:id])
+    @company.update_attributes(params[:company])
     @company.save
     redirect_to companies_url
   end

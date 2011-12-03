@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  note: MyString
+  job_id: 1
+  contact_id: 1
+
+two:
+  note: MyString
+  job_id: 1
+  contact_id: 1
