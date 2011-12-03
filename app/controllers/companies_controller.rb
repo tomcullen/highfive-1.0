@@ -9,7 +9,7 @@ class CompaniesController < ApplicationController
 
   def index
     @company = Company.all
-    #rel@contact = @company.contacts
+    #@contact = @company.contacts
   end
 
   def show
