@@ -9,28 +9,27 @@
     <th>Meetups</th>
     <th>Meetup url</th>
     <th>Notes</th>
-    <th>Job connection</th>
     <th>Mainphone</th>
 
   </tr>
   
   
 
-<%= @contacts.companies.each do |company| %>
-  <%= company.companyname %>
-<% end %>
 
 
 <% @contacts.each do |contact| %>
   <tr>
     <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
-    <td><%= contact.jobtitle %></td>
+    
+    <td><% contact.companies.each do |company| %>
+      <%= link_to company.companyname, company_url(company) %></td>
+    <% end %>
     <td><%= contact.jobtitle %></td>
     <td><%= contact.meetups %></td>
     <td><%= contact.meetup_url %></td>
     <td><%= contact.otherinfo %></td>
-    <td><%= contact.job_connection_id %></td>
     <td><%= contact.mainphone %></td>
+
 
   </tr>
 <% end %>

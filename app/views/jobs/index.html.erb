@@ -1,16 +1,33 @@
 <h2>Jobs index page</h2>
 
 
+<table>
+<tr>
+  <th>Job Title</th>
+  <th>Company</th>
+  <th>Job Description</th>
+  <th>Website</th>
+  <th>Job Posted On:</th>
+  <th>Salary</th>
+  <th>Career Field</th>
+  <th>Date Applied To:</th>
+  <th>Related Contacts:</th>
+</tr>
 
 
-<% @job.each do |f| %>
-<p><%= link_to f.jobtitle, job_url(f) %> | 
-<%= f.jobdescription %> | 
-<%= f.postinglink %> | 
-<%= f.dateofposting %> |  
-<%= f.salary %> | 
-<%= f.careerfield %> | 
-<%= f.dateappliedto %> </p>
+<% @jobs.each do |f| %>
+<tr>
+<td><%= link_to f.jobtitle, job_url(f) %></td> 
+<td><%= f.company.companyname %></td>
+<td><%= f.jobdescription %></td>
+<td><%= f.postinglink %></td>
+<td><%= f.dateofposting %></td>
+<td><%= f.salary %></td>
+<td><%= f.careerfield %></td>
+<td><%= f.dateappliedto %></td>
+<% f.contacts.each do|contact| %>
+<td><%= contact.firstname  %> <%= contact.lastname %></td>
 <% end %>
-
+<% end %>
+</tr>
 <p><%= link_to "Add New Job Posting", new_job_url %></p>

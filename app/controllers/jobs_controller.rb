@@ -9,7 +9,8 @@ class JobsController < ApplicationController
   end
 
   def index
-    @job = Job.all
+   # @job = Job.find(params[:id])
+    @jobs = Job.all
   end
 
   def edit
@@ -20,6 +21,8 @@ class JobsController < ApplicationController
     @job = Job.new(params[:job])
     @job.save
     redirect_to jobs_url    
+    
+    
   end
   
   def update
