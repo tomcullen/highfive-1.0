@@ -12,67 +12,64 @@
   <% end %>
 
   <div class="field">
-    <%= f.label "First Name" %><br />
+    <%= f.label "First Name" %>
     <%= f.text_field :firstname %>
   </div>
   <div class="field">
-    <%= f.label "Last Name" %><br />
-    <%= f.text_field :lastname %>
-  </div>
+    <%= f.label "Last Name" %>
+    <%= f.text_field :lastname, :placeholder => "last name" %>
+  </div>  
   <div class="field">
-    <%= f.label "Job Title" %><br />
-    <%= f.text_field :jobtitle %>
-  </div>
+    <%= f.label "Company" %>
+    <%= text_field_tag :company, nil, :placeholder => "Current Company" %>
+  </div>  
   <div class="field">
-    <%= f.label "Email Address" %><br />
+    <%= f.label "Email Address" %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label "Twitter handle" %><br />
+      <%= f.label "Home/Cell #" %>
+      <%= f.number_field :mainphone %>
+    </div>
+    <div class="field">
+      <%= f.label "Work #" %>
+      <%= f.number_field :workphone %>
+    </div>
+  <div class="field">
+    <%= f.label "Job Title" %>
+    <%= f.text_field :jobtitle %>
+  </div>
+  <div class="field">
+    <%= f.label "Twitter handle" %>
     <%= f.text_field :twitter %>
   </div>
   <div class="field">
-    <%= f.label "LinkedIn" %><br />
+    <%= f.label "LinkedIn" %>
     <%= f.text_field :linkedin %>
   </div>
   <div class="field">
-    <%= f.label "Facebook" %><br />
+    <%= f.label "Facebook" %>
     <%= f.text_field :facebook %>
   </div>
+
   <div class="field">
-    <%= f.label "Home/Cell #" %><br />
-    <%= f.number_field :mainphone %>
-  </div>
-  <div class="field">
-    <%= f.label "Work #" %><br />
-    <%= f.number_field :workphone %>
-  </div>
-  <div class="field">
-    <%= f.label "Fax #" %><br />
+    <%= f.label "Fax #" %>
     <%= f.number_field :faxnumber %>
   </div>
   <div class="field">
-    <%= f.label "Meetups" %><br />
+    <%= f.label "Meetups" %>
     <%= f.text_field :meetups %>
   </div>
   <div class="field">
-    <%= f.label "Meetup links" %><br />
+    <%= f.label "Meetup links" %>
     <%= f.text_field :meetup_url %>
   </div>
   <div class="field">
-    <%= f.label "Other Info" %><br />
+    <%= f.label "Other Info" %>
     <%= f.text_area :otherinfo %>
   </div>
   <div class="field">
-    <%= f.label :job_connection_id %><br />
-    <%= f.number_field :job_connection_id %>
-  </div>
-  <div class="field">
-    <%= f.label :company_id %><br />
-    <%= f.number_field :company_id %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br />
+    <%= f.label :user_id %>
     <%= f.number_field :user_id %>
   </div>
   <div class="actions">

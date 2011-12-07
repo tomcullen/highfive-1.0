@@ -20,6 +20,8 @@ class CompaniesController < ApplicationController
     @company = Company.new(params[:company])
     @company.save
     redirect_to companies_url
+    
+    
   end
   
   def update

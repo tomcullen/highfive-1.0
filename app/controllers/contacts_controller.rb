@@ -25,6 +25,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new.json
   def new
     @contact = Contact.new
+    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -41,9 +42,17 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(params[:contact])
+    # logger.debug "contact company is: #{(params[:company])}"
 
+    if Company.find_by_companyname(params[:company]).present?
+      company = Company.find_by_companyname(params[:company])
+    else
+      company = Company.create :companyname => params[:company]
+    end
+      
     respond_to do |format|
       if @contact.save
+        Contactcompanyjoin.create contact_id: @contact.id, :company_id => company.id
         format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
         format.json { render json: @contact, status: :created, location: @contact }
       else
