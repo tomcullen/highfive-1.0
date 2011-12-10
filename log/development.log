@@ -59632,3 +59632,1678 @@ ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"
   
 
 Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 10:38:18 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11[0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15[0m
+Rendered contacts/index.html.erb within layouts/application (84.3ms)
+Completed 200 OK in 95ms (Views: 91.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /companies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 10:38:19 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts/1" for 127.0.0.1 at 2011-12-10 10:38:20 -0600
+  Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+Rendered contacts/show.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 80ms (Views: 74.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /jobs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 10:38:21 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15
+Rendered contacts/index.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 98ms (Views: 94.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:13:00 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:24:45 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13[0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15[0m
+Rendered contacts/index.html.erb within layouts/application (103.0ms)
+Completed 500 Internal Server Error in 567ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fbfe39241e0>:0x007fbfe39200e0>):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url %></p>
+    11: <%= link_to "My Profile", user_url(user) %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3746675165827644287_70231066747860'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:24:54 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15
+Rendered contacts/index.html.erb within layouts/application (109.0ms)
+Completed 500 Internal Server Error in 125ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url %></p>
+    11: <%= link_to "My Profile", user_url %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3746675165827644287_70231088828800'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:25:04 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15[0m
+Rendered contacts/index.html.erb within layouts/application (61.2ms)
+Completed 500 Internal Server Error in 125ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url(:user) %></p>
+    11: <%= link_to "My Profile", user_url %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3746675165827644287_70231066528520'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:25:10 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" 
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15
+Rendered contacts/index.html.erb within layouts/application (81.1ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url(:id) %></p>
+    11: <%= link_to "My Profile", user_url %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3746675165827644287_70231071163440'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:25:51 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15[0m
+Rendered contacts/index.html.erb within layouts/application (79.9ms)
+ERROR: compiling _app_views_layouts_application_html_erb__3746675165827644287_70231089277240 RAISED /Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views/layouts/application.html.erb:11: syntax error, unexpected ')', expecting keyword_end
+...nk_to "My Profile", user_url) );@output_buffer.safe_concat('
+...                               ^
+Function body:           def _app_views_layouts_application_html_erb__3746675165827644287_70231089277240(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Highfive10</title>
+  ');@output_buffer.append= ( stylesheet_link_tag    "application" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag "application" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tags );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<h1>HIGH FIVE</h1>
+<p>');@output_buffer.append= ( link_to "Sign up!", new_user_url );@output_buffer.safe_concat('</p>
+');@output_buffer.append= ( link_to "My Profile", user_url) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('<h2>');@output_buffer.append= ( link_to "CONTACTS", contacts_url  );@output_buffer.safe_concat(' | ');@output_buffer.append= ( link_to "JOBS", jobs_url );@output_buffer.safe_concat(' | ');@output_buffer.append= ( link_to "COMPANIES", companies_url );@output_buffer.safe_concat('</h2>
+<body>
+
+');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/template.rb:309:in `module_eval'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/template.rb:309:in `compile'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/template.rb:217:in `compile!'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/template.rb:170:in `block in render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/notifications.rb:55:in `instrument'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/template.rb:169:in `render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/template_renderer.rb:52:in `render_with_layout'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/rendering.rb:99:in `render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/cullentj/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.2/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/mime_responds.rb:195:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/contacts_controller.rb:7:in `index'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/callbacks.rb:416:in `_run__883002842075166502__process_action__3219507956323329837__callbacks'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/notifications.rb:53:in `block in instrument'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/notifications.rb:53:in `instrument'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/base.rb:121:in `process'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal.rb:193:in `dispatch'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_controller/metal.rb:236:in `block in action'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/routing/route_set.rb:532:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/flash.rb:247:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.2/lib/active_record/query_cache.rb:64:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.2/lib/rails/rack/logger.rb:13:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.2/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/static.rb:53:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.2/lib/rails/engine.rb:456:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/content_length.rb:14:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.2/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/cullentj/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/cullentj/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/cullentj/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/views/layouts/application.html.erb:11: syntax error, unexpected ')', expecting keyword_end
+...nk_to "My Profile", user_url) );@output_buffer.safe_concat('
+...                               ^):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url %></p>
+    11: <%= link_to "My Profile", user_url) %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:28:19 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15
+Rendered contacts/index.html.erb within layouts/application (96.8ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url %></p>
+    11: <%= link_to "My Profile", user_url %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3746675165827644287_70231066729240'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:28:27 -0600
+  Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15[0m
+Rendered contacts/index.html.erb within layouts/application (83.3ms)
+Completed 500 Internal Server Error in 547ms
+
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fbfe60aa8b8>:0x007fbfe609eba8>):
+    8: </head>
+    9: <h1>HIGH FIVE</h1>
+    10: <p><%= link_to "Sign up!", new_user_url %></p>
+    11: <%= link_to "My Profile", user_url(user) %>
+    12: <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+    13: <body>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3746675165827644287_70231087470920'
+  app/controllers/contacts_controller.rb:7:in `index'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 11:28:32 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14[0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15
+Rendered contacts/index.html.erb within layouts/application (73.5ms)
+Completed 200 OK in 122ms (Views: 117.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:33 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:33 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:33 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:33 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:33 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /companies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:28:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/users/user" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"user"}
+Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:28:41 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/user" for 127.0.0.1 at 2011-12-10 11:50:17 -0600
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"user"}
+Rendered users/show.html.erb within layouts/application (0.0ms)
+Compiled sessions.css  (19ms)  (pid 3645)
+Compiled application.css  (79ms)  (pid 3645)
+Compiled sessions.js  (119ms)  (pid 3645)
+Compiled application.js  (142ms)  (pid 3645)
+Completed 200 OK in 335ms (Views: 334.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /sessions.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:50:18 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:50:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /companies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:02 -0600
+Served asset /contacts.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:03 -0600
+Served asset /jobs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:03 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:03 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:03 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:51:03 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:51:28 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /contacts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:51:56 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /jobs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:54:27 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:54:38 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /jobs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /jobs.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:54:39 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /jobs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 11:54:51 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started POST "/sessions/create" for 127.0.0.1 at 2011-12-10 12:02:22 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/create"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started POST "/sessions/create" for 127.0.0.1 at 2011-12-10 12:03:19 -0600
+
+ActionController::RoutingError (No route matches [POST] "/sessions/create"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:05:03 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:07:29 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:07:32 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:09:20 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:09:28 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:10:55 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:11:04 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:11:11 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:11:34 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:11:54 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:12:40 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:12:41 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:12:45 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-12-10 12:13:08 -0600
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:13:14 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:17: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:16:20 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:19: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.7ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:20:21 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:22:12 -0600
+
+SyntaxError (/Users/cullentj/Dropbox/Toms programing/HIGHFIVE/highfive-1.0/app/controllers/sessions_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:24:14 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (68.5ms)
+Completed 500 Internal Server Error in 95ms
+
+ActionView::Template::Error (undefined local variable or method `sessions_create_url' for #<#<Class:0x007f90893ee380>:0x007f90893f2a98>):
+    1: <h1>Log into your HIGH FIVE account!</h1>
+    2: 
+    3: 
+    4: <% form_tag sessions_create_url do %>
+    5: <p>Email: <%= text_field_tag :email %></p>
+    6: <p>Password: <%= text_field_tag :password %></p>
+    7: <p>  <%= submit_tag "Sign in to HIGH FIVE" %></p>
+  app/views/sessions/new.html.erb:4:in `_app_views_sessions_new_html_erb___1703444867984811606_70129377315980'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:25:58 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (48.4ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (undefined local variable or method `sessions_create_url' for #<#<Class:0x007f908c4a2148>:0x007f908c4988f0>):
+    1: <h1>Log into your HIGH FIVE account!</h1>
+    2: 
+    3: 
+    4: <%= form_tag sessions_create_url do %>
+    5: <p>Email: <%= text_field_tag :email %></p>
+    6: <p>Password: <%= text_field_tag :password %></p>
+    7: <p>  <%= submit_tag "Sign in to HIGH FIVE" %></p>
+  app/views/sessions/new.html.erb:4:in `_app_views_sessions_new_html_erb___1703444867984811606_70129402819880'
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /sessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /companies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /contacts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /jobs.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /companies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /contacts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /jobs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 12:27:11 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2011-12-10 12:27:36 -0600
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QUCpYe1OOrefwQOqmJBxkU1FfBWU0oPl2Al2GEu/1Hg=", "email"=>"tom@tom.com", "password"=>"[FILTERED]", "commit"=>"Sign in to HIGH FIVE"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'tom@tom.com' LIMIT 1[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 214ms
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+  Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 2
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 8[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 9
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 10[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 11
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 12[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 13
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 14[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" INNER JOIN "contactcompanyjoins" ON "companies"."id" = "contactcompanyjoins"."company_id" WHERE "contactcompanyjoins"."contact_id" = 15
+Rendered contacts/index.html.erb within layouts/application (172.6ms)
+Completed 200 OK in 184ms (Views: 180.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /jobs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /jobs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/images/Hiring-girl.jpg" for 127.0.0.1 at 2011-12-10 12:27:37 -0600
+
+ActionController::RoutingError (No route matches [GET] "/images/Hiring-girl.jpg"):
+  
+
+Rendered /Users/cullentj/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
