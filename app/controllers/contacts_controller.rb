@@ -50,6 +50,8 @@ class ContactsController < ApplicationController
       company = Company.create :companyname => params[:company]
     end
       
+      
+      
     respond_to do |format|
       if @contact.save
         Contactcompanyjoin.create contact_id: @contact.id, :company_id => company.id

@@ -10,6 +10,12 @@
   <b>Lastname:</b>
   <%= @contact.lastname %>
 </p>
+<p>
+  <b>Company Name:</b>
+  <% @contact.companies.each do |company| %>
+  <%= company.companyname %>
+  <% end %>
+</p>
 
 <p>
   <b>Jobtitle:</b>
@@ -58,7 +64,7 @@
 
 <p>
   <b>Meetup url:</b>
-  <%= @contact.meetup_url %>
+  <%= link_to @contact.meetup_url, "http://#{@contact.meetup_url}" %>
 </p>
 
 <p>

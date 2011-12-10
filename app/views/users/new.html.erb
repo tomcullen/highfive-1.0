@@ -1,0 +1,12 @@
+<h1>Create a new account here!</h1>
+
+
+<%= form_for (@user) do |f| %>
+<p>First Name: <%= f.text_field :firstname %></p>
+<p>Last Name: <%= f.text_field :lastname %></p>
+<p>Email: <%= f.text_field :email %></p>
+<p>Password: <%= f.password_field :password %></p>
+<p>Password Confirmation: <%= f.password_field :password_confirmation %></p>
+  <p><%= f.submit "Create your HIGH FIVE Account!" %></p>
+  <% end %>
+  

@@ -14,7 +14,7 @@
 <% @company.each do |f| %>
 <tr>
   <td><%= link_to f.companyname, company_url(f) %></td>
-  <td><%= f.website %></td>
+  <td><%= link_to f.website, "http://#{f.website}" %></td>
   <td><%= f.industry %></td>
   <td><%= f.companynotes %></td>
   <td><%= f.contacts.count %></td>

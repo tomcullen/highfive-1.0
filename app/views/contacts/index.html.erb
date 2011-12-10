@@ -7,7 +7,7 @@
     <th>Company</th>
     <th>Title</th>
     <th>Meetups</th>
-    <th>Meetup url</th>
+    <th>Meetup Website</th>
     <th>Notes</th>
     <th>Mainphone</th>
 
@@ -19,14 +19,14 @@
 
 <% @contacts.each do |contact| %>
   <tr>
-    <td><%= link_to contact.firstname, contact_url(contact) %> <%= link_to contact.lastname, contact_url(contact) %></td>
+    <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %></td>
     
     <td><% contact.companies.each do |company| %>
       <%= link_to company.companyname, company_url(company) %></td>
     <% end %>
     <td><%= contact.jobtitle %></td>
     <td><%= contact.meetups %></td>
-    <td><%= contact.meetup_url %></td>
+    <td><%= link_to contact.meetup_url, "http://#{contact.meetup_url}" %></td>
     <td><%= contact.otherinfo %></td>
     <td><%= contact.mainphone %></td>
 

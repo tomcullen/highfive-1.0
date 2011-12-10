@@ -11,22 +11,22 @@
   <th>Salary</th>
   <th>Career Field</th>
   <th>Date Applied To:</th>
-  <th>Related Contacts:</th>
+  <th>This Jobs Contacts:</th>
 </tr>
 
 
 <% @jobs.each do |f| %>
 <tr>
 <td><%= link_to f.jobtitle, job_url(f) %></td> 
-<td><%= f.company.companyname %></td>
+<td><%= link_to f.company.companyname, company_url(f) %></td>
 <td><%= f.jobdescription %></td>
-<td><%= f.postinglink %></td>
+<td><%= link_to f.postinglink, "http://#{f.postinglink}" %></td>
 <td><%= f.dateofposting %></td>
 <td><%= f.salary %></td>
 <td><%= f.careerfield %></td>
 <td><%= f.dateappliedto %></td>
 <% f.contacts.each do|contact| %>
-<td><%= contact.firstname  %> <%= contact.lastname %></td>
+<td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(f) %></td>
 <% end %>
 <% end %>
 </tr>
