@@ -1,11 +1,14 @@
 <h1>Log into your HIGH FIVE account!</h1>
 
 
-<%= form_tag sessions_url do %>
-
+<%= form_tag sessions_create_url do %>
 <p>Email: <%= text_field_tag :email %></p>
 <p>Password: <%= text_field_tag :password %></p>
 <p>  <%= submit_tag "Sign in to HIGH FIVE" %></p>
   <% end %>
+  
+  
+  
+  
   
 <h2><%=  button_to "Create a new HIGH FIVE Account!", new_user_url %></h2>

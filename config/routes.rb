@@ -1,15 +1,14 @@
 Highfive10::Application.routes.draw do
 
 
-
-
-
-
   resources :companies
   resources :jobs
   resources :contacts
   resources :users
-  resources :sessions
+
+  get "sessions/new"
+  post "sessions/create"
+  delete "sessions/destroy"
      
   
 

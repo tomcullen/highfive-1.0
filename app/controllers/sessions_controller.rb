@@ -14,6 +14,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    reset_session
+    redirect_to sessions_new_url, notice: "You have logged out"
   end
 
 end
