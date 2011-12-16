@@ -8,7 +8,7 @@
 
 Job.destroy_all
 Job.create(company_id: '1', jobtitle: 'Lead dev', jobdescription: "write sweet code", postinglink: 'www.codemaster.com', dateofposting: '11/11/11', salary: '100', careerfield: 'technology', dateappliedto: '12/12/11')
-Job.create(company_id: '2', jobtitle: 'Trader', jobdescription: "make mad money", postinglink: 'www.trademaster.com', dateofposting: '10/15/11', salary: '10', careerfield: 'finance', dateappliedto: '12/1/11')
+Job.create(company_id: '2', jobtitle: 'Trader', jobdescription: "make mad money", postinglink: 'www.trademaster.com', dateofposting: '10/11/11', salary: '10', careerfield: 'finance', dateappliedto: '12/1/11')
 
 Contact.destroy_all
 Contact.create(firstname: 'Tom', lastname: 'Cullen', jobtitle: 'head master', email: 't@t.com', twitter: 'tommy', linkedin: 'tomyc', facebook: 'tomc', mainphone: '12345', workphone: '123456', faxnumber: '123456', meetups: '8th light', meetup_url: 'wwww.meatdown.com', otherinfo: 'this is cool')

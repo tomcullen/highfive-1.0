@@ -9,5 +9,6 @@ class Contact < ActiveRecord::Base
   
   
   has_many :companies, :through => :contactcompanyjoins
-  has_many :contactcompanyjoins
+  has_many :contactcompanyjoins 
+
 end

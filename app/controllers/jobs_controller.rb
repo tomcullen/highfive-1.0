@@ -9,7 +9,8 @@ class JobsController < ApplicationController
   end
 
   def index
-   # @job = Job.find(params[:id])
+   #@job = Job.find(params[:id])
+  # @job = @jobs.find_by current_user
     @jobs = Job.all
   end
 
@@ -19,10 +20,20 @@ class JobsController < ApplicationController
   
   def create
     @job = Job.new(params[:job])
-    @job.save
-    redirect_to jobs_url    
+    @job.user = current_user
+    if Company.find_by_companyname(params[:company]).present?
+      company = Company.find_by_companyname(params[:company])
+    else
+      company = Company.create :companyname => params[:company]
+    end
     
+    @job.company = company
     
+    @job.save  
+    Myfirm.create user_id: current_user, company_id: company
+    
+    redirect_to jobs_url
+       
   end
   
   def update

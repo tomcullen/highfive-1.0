@@ -1,4 +1,7 @@
 class CompaniesController < ApplicationController
+  
+  before_filter :require_user
+  
   def new
     @company = Company.new
   end
@@ -8,20 +11,27 @@ class CompaniesController < ApplicationController
   end
 
   def index
-    @company = Company.all
-    #@contact = @company.contacts
+    
+    @company = current_user.companies.uniq!
+  
   end
 
   def show
     @company = Company.find(params[:id])
+    
+    #if@currentuser.myfirms.company.find_by(params[:id]) || @current_user.contactcompanyjoins.find_by(params[:id])
+    #else
+    #redirect_to __url notice STOPHACKING
   end
   
   def create
     @company = Company.new(params[:company])
+    
     @company.save
-    redirect_to companies_url
-    
-    
+    Myfirm.create :user_id => current_user, :company_id => @company.id
+
+    redirect_to companies_url, notice: "company created"
+
   end
   
   def update

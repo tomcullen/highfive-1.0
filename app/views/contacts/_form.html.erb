@@ -1,15 +1,8 @@
 <%= form_for(@contact) do |f| %>
-  <% if @contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-      <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  
+
+  
 
   <div class="field">
     <%= f.label "First Name" %>
@@ -68,10 +61,7 @@
     <%= f.label "Other Info" %>
     <%= f.text_area :otherinfo %>
   </div>
-  <div class="field">
-    <%= f.label :user_id %>
-    <%= f.number_field :user_id %>
-  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

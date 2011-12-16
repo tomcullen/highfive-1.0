@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to contacts_url, notice: "Welcome !"
+      redirect_to contacts_url, notice: "Welcome #{user.firstname}!"
     else
       render :new
     end

@@ -1,5 +1,6 @@
 <%= form_for (@job) do |f| %>
 
+
 <ul>Job Title<%= f.text_field :jobtitle %></ul>
 <ul>Job Description<%= f.text_field :jobdescription %></ul>
 <ul>Posting Link<%= f.text_field :postinglink %></ul>
@@ -7,6 +8,7 @@
 <ul>Salary<%= f.text_field :salary %></ul>
 <ul>Career Field<%= f.text_field :careerfield %></ul>
 <ul>Date Applied to<%= f.text_field :dateappliedto %></ul>
-<ul>Contact<%= f.text_field :company %></ul>
+<ul>Company<%= text_field_tag :company, nil %></ul>
+
 <ul><%= f.submit %></ul>
 <% end %>

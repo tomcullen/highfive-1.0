@@ -6,6 +6,7 @@
  *= require_tree . 
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,7 +15,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, tbody, tfoot, thead, tr, 
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
@@ -23,16 +24,26 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+	font-style: inherit;
+	-moz-box-shadow: 0 0 0 #faf8f8;
+	-webkit-box-shadow: 0 0 0 #faf8f8;
+	box-shadow: 0 0 0 #faf8f8;
+	color: #110606;
+	background: url(../../../../../../../Desktop/Screen%20Shot%202011-12-16%20at%208.32.48%20AM.png) #d9dff4;
 }
+    
+th, td {
+	
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height:;
 }
 ol, ul {
 	list-style: none;

@@ -8,6 +8,6 @@
 
 <h3><p>My <%= @company.companyname %> Contacts:</p></h3>
 <% @company.contacts.each do |contact| %>
-  <%= contact.firstname %>
-  <%= contact.lastname %>
+<ul>  <%= contact.firstname %>
+  <%= contact.lastname %></ul>
   <% end %>

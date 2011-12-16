@@ -2,13 +2,14 @@
 
 
 
+<p>Company: <%= link_to @job.company.companyname, company_url(params[:company_id]) %></p>
+<p>Job Title: <%= @job.jobtitle %></p>
+<p>Job Description: <%= @job.jobdescription %></p>
+<p>Posting Link: <%= link_to @job.postinglink, "http://#{@job.postinglink}" %></p>
 
-<%= @job.jobtitle %> | 
-<%= @job.jobdescription %> | 
-<%= @job.postinglink %> | 
-<%= @job.dateofposting %> |  
-<%= @job.salary %> | 
-<%= @job.careerfield %> | 
-<%= @job.dateappliedto %> | 
+<p>Date of Posting: <%= @job.dateofposting %></p>
+<p>Salary: <%= @job.salary %></p>
+<p>Career Field: <%= @job.careerfield %></p>
+<p>Date Applied to: <%= @job.dateappliedto %></p>
 
 <%= link_to "Edit this Job Here", edit_job_url %>

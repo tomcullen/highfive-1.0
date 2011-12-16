@@ -4,6 +4,10 @@ class Company < ActiveRecord::Base
   has_many :contacts, through: :contactcompanyjoins
   
   has_many :jobs
+  
+  has_many :myfirms
+  has_many :users, through: :myfirms
+
 
   # def self.from_input(params[:company])
   #   find_by_companyname(params[:company].capitalize) || create_new_from_input(params[:company])

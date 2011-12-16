@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   
   has_many :jobs
   has_many :contacts
-  has_many :companies
+  has_many :myfirms
+  has_many :companies, through: :myfirms
   
 end

@@ -13,7 +13,8 @@
 <p>
   <b>Company Name:</b>
   <% @contact.companies.each do |company| %>
-  <%= company.companyname %>
+  <%= link_to company.companyname, company_url(company) %></td>
+  
   <% end %>
 </p>
 
@@ -72,14 +73,6 @@
   <%= @contact.otherinfo %>
 </p>
 
-
-
-
-
-<p>
-  <b>User:</b>
-  <%= @contact.user_id %>
-</p>
 
 
 <%= link_to 'Edit', edit_contact_path(@contact) %> |
