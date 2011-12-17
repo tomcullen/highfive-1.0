@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <%= stylesheet_link_tag    "interested" %>
+
+  </head>
+  <div id = "container">
+
+  <body>
+    <% if flash[:notice] %>    
+      <div id = "notice">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+
+    <div id="logo">
+      <%= image_tag "HighFiveLogo.png" %>
+    </div>
+    
+    <div id = "info">
+      <p class = "copy">Sign up Here!</p>
+      
+        
+      <p>
+        <%= form_for @interested do |f| %>
+        <%= f.text_field :email %>
+          <div id= "button"> <%= f.submit "Sign Up" %></div>
+        
+        <% end %>
+      </p>
+    </div>
+    
+  </body></div>
+</html>

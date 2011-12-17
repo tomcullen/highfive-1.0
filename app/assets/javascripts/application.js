@@ -5,5 +5,12 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
+
+$(function() {
+	$("#job_dateofposting").datepicker({
+		//onSelect: function()
+	});
+});

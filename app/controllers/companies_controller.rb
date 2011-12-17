@@ -11,8 +11,11 @@ class CompaniesController < ApplicationController
   end
 
   def index
-    
-    @company = current_user.companies.uniq!
+    if current_user.companies.uniq!
+      @company = current_user.companies.uniq!
+    else
+      @company = current_user.companies
+    end
   
   end
 

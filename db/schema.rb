@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111216021602) do
+ActiveRecord::Schema.define(:version => 20111217163106) do
 
   create_table "companies", :force => true do |t|
     t.string   "companyname"
@@ -44,6 +44,12 @@ ActiveRecord::Schema.define(:version => 20111216021602) do
     t.string   "meetup_url"
     t.text     "otherinfo"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "interesteds", :force => true do |t|
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

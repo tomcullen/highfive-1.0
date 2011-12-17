@@ -11,7 +11,7 @@ class JobsController < ApplicationController
   def index
    #@job = Job.find(params[:id])
   # @job = @jobs.find_by current_user
-    @jobs = Job.all
+    @jobs = current_user.jobs
   end
 
   def edit

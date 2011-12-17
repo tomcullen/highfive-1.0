@@ -1,0 +1,68 @@
+// Place all the styles related to the landingpage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#container {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+body {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  background-color: white;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+  font-size: 13px;
+  color: #333;
+}
+
+#notice {
+	font-family: Verdana;
+	text-align: center;
+	width: 900px;
+	background-color: #1965b2;
+	color: white;
+	margin: 2px auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#logo{
+width: 960px;
+text-align: center;
+margin-top: 100px;
+}
+
+#info{
+	text-align: center;
+	margin-top: -20px;
+}
+
+p.copy{
+margin-bottom: 50px ;
+}
+#header, #about, #getting-started {
+  padding-left: 75px;
+  padding-right: 30px;
+}
+
+#button{
+	padding: 250;
+}
+
+#header {
+/*  background-image: url("/assets/HighFiveLogo.png");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  height: 600px;
+}
+#header h1, #header h2 {margin: 0}
+#header h2 {
+  color: #888;
+  font-weight: normal;
+  font-size: 16px;
+}
+
