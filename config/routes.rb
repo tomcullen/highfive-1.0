@@ -1,5 +1,7 @@
 Highfive10::Application.routes.draw do
 
+  root :to => 'interesteds#new'
+  
 
   resources :companies
   resources :jobs
@@ -7,6 +9,9 @@ Highfive10::Application.routes.draw do
   resources :users
   
   resources :interesteds
+
+  get "main/new"
+  get "main/show"
   
   get "sessions/new"
   post "sessions/create"

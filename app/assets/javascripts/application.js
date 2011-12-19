@@ -14,3 +14,14 @@ $(function() {
 		//onSelect: function()
 	});
 });
+
+
+$(function() {
+	$("#job_dateappliedto").datepicker({
+		//onSelect: function()
+	});
+});
+
+
+
+

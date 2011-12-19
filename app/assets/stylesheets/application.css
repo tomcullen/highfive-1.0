@@ -2,61 +2,185 @@
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require reset
  *= require_self
  *= require_tree . 
 */
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, 
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html {
+	height: 100%;
+}
+body {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	font-style: inherit;
-	-moz-box-shadow: 0 0 0 #faf8f8;
-	-webkit-box-shadow: 0 0 0 #faf8f8;
-	box-shadow: 0 0 0 #faf8f8;
-	color: #110606;
-	background: url(../../../../../../../Desktop/Screen%20Shot%202011-12-16%20at%208.32.48%20AM.png) #d9dff4;
+	height: 100%;
 }
-    
-th, td {
+
+#background_color {
+	background-color: #1965b2;
+	height: 100%;
+}
+
+
+#container {
+	background-color: #FFFFFF;
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px 30px;
+	height: 100%;
 	
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+em{
+	font-style: italic;
+	font-size: smaller;
 }
-body {
-	line-height:;
+#app_logo {
+	float: left;
 }
-ol, ul {
-	list-style: none;
+
+#top_nav {
+	float: right;
+	margin-top: 30px;
+	text-align: right;
 }
-blockquote, q {
-	quotes: none;
+
+
+#to_do_list{
+	float: center;
+	padding: 40px;
+	border-radius: 5px;
+	border: 1.75px solid #1965b2;
+	box-shadow: 0px 3px 5px #1965b2;
+	font-family: 30px , "Century Gothic";
+	margin-top: 50px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+#list_title{
+	font: bold 22px 2px, "Century Gothic";
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), color-stop(0.686, #fff));
+	font-size: 22px;
+	padding: 0 0 0 10px;
+	box-shadow: 0px 0px 5px 0px #444;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+li:nth-child(odd)    {
+	 background-color: rgba(24, 101, 178, 0.25); 
+	 padding: 10px;
+	 font-size: 15px;
+ }
+li:nth-child(even)    { 
+	background-color: rgba(137, 187, 40, 0.25); 
+	padding: 10px;
+	font-size: 15px;
 }
+tr:nth-child(odd)    {
+	background-color: rgba(24, 101, 178, 0.25); 
+	padding: 10px;
+	font-size: 25px;
+}
+tr:nth-child(even)    { 
+	background-color: rgba(137, 187, 40, 0.25); 
+	padding: 10px;
+	font-size: 25px;
+}
+
+
+td{
+	color: black;
+	border: 1px solid silver;
+	
+	font-size: 20px;
+	font-weight: 500;
+	padding: 8px 2px;
+}
+th{
+	color: black;
+	border: 1px solid silver;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 8px 2px;
+	
+}
+
+
+
+#new_job_button input {
+	width: 125px;
+	height: 40px;
+	color: #ffffff;
+	background-color: rgba(24, 101, 178, 0.98);
+	border: 1px solid silver;
+	border-radius: 5px;
+	font-size: 15px;
+	margin: 5px 0px;
+}
+
+
+#import{
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+
+
+
+
+  
+
+/*#social_networks {
+	float: right;
+	border: 2px dashed #333;
+	padding: 10px;
+}
+
+
+
+#contact_button input{
+	width: 100px;
+	height: 30px;
+	background-color: #8abb28;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 8px;
+	color: #ffffff;
+	margin-left: 0px;
+}
+
+#newcontact{
+float: left;
+margin: 30px 0px 5px 0px;
+padding: 5px;
+border-radius: 5px;
+border: 2px solid #1965b2;
+box-shadow: 0px 6px 10px #1965b2;
+}
+
+
+#job_button input{
+	width: 100px;
+	height: 30px;
+	background-color: #8abb28;
+	border: 1px solid #333;
+	border-radius: 5px;
+	font-size: 8px;
+	color: #ffffff;	
+	margin-left: 0px;
+	
+}
+
+#addnewjob{
+float: left;
+padding: 5px;
+margin: 30px 0px 5px 0px;
+border-radius: 5px;
+border: 2px solid #1965b2;
+box-shadow: 0px 6px 10px #1965b2;
+}
+
+
+#socialnetworks{
+	
+float: right;
+}*/

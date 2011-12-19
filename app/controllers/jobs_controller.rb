@@ -1,4 +1,6 @@
 class JobsController < ApplicationController
+  before_filter :require_user
+  
   def new
     @job = Job.new
   end
@@ -9,8 +11,6 @@ class JobsController < ApplicationController
   end
 
   def index
-   #@job = Job.find(params[:id])
-  # @job = @jobs.find_by current_user
     @jobs = current_user.jobs
   end
 

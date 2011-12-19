@@ -8,7 +8,7 @@
 	margin: 0 auto;	
 }
 
-body {
+body.landing_page {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
@@ -46,11 +46,36 @@ margin-bottom: 50px ;
 #header, #about, #getting-started {
   padding-left: 75px;
   padding-right: 30px;
+  font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-#button{
-	padding: 250;
-}
+
+/*#button{
+text-align: center;
+  display: block;
+/*  width: 100px;
+  height: 30px;*!/
+  margin: 20px auto;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+    color: #0060b8;
+  text-decoration: none;
+  text-shadow: 0px 0 rgba(0, 0, 0, 0.35);
+  font: bold 30px "Arvo",serif;
+  padding: 1px 10px 15px 10px;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #0060b8 0%, #0060b8 0%, #0060b8 0%, #0060b8 0%, #0060b8 0%, #0060b8 0%, #0060b8 0%) #0060b8;
+}*/
+
+	#button input {
+		width: 125px;
+		height: 40px;
+		color: #ffffff;
+		background-color: rgba(24, 101, 178, 0.98);
+		border: 1px solid #333;
+		border-radius: 5px;
+		font-size: 20px;
+	}
 
 #header {
 /*  background-image: url("/assets/HighFiveLogo.png");*/
@@ -58,6 +83,7 @@ margin-bottom: 50px ;
   background-position: center;
   background-color: white;
   height: 600px;
+  opacity: 0.65;
 }
 #header h1, #header h2 {margin: 0}
 #header h2 {

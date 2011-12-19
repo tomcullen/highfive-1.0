@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Highfive10</title>
+  <title>High Five - Jobs</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<div id = "container">
+  <div id="background_color">
+    <div id="container">
   <header>
-    <h1>HIGH FIVE</h1>
-
-    <%= notice %>
-    <% if logged_in? %>
-    <p><%= link_to "Sign OUT!", sessions_destroy_url, :method => :delete %></p>
-
-    <% else %>
-    <p><%= link_to "Sign IN!", sessions_new_url %></p>
-    <% end %>
-    <p><%= link_to "Sign up!", new_user_url %></p>
-
-    <%= link_to "My Profile", user_url(:user) %>
-    <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url %></h2>
+      <div id="app_logo"><%= image_tag "high_five_logo.png"# , :size => "125x40" %></div>
+    
+      <div id="top_nav">
+        <%= notice %>
+        <% if logged_in? %>
+        <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url   
+            %></h2>
+            
+        <p><%= link_to "My Profile", user_url(:user) %> | <%= link_to "Sign OUT!", sessions_destroy_url, :method => :delete %></p>
+        
+        <% else %>
+        <p><%= link_to "Sign IN!", sessions_new_url %> | <%= link_to "Sign up!", new_user_url %></p>
+        <% end %>
+      </div>
+    
+      <div class="clear"></div>
+     
   </header>
   <body>
 
     <%= yield %>
-
+    
   </body>
-</div>
+      </div>
+    </div>
 </html>

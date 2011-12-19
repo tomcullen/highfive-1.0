@@ -1,3 +1,4 @@
+<title>High Five - Jobs</title>
 
 <!DOCTYPE html>
 <html>
@@ -7,7 +8,7 @@
   </head>
   <div id = "container">
 
-  <body>
+  <body class="landing_page">
     <% if flash[:notice] %>    
       <div id = "notice">
         <%= flash[:notice] %>
@@ -19,16 +20,20 @@
     </div>
     
     <div id = "info">
-      <p class = "copy">Sign up Here!</p>
+      <p class = "copy">Manage your job search</p>
       
-        
+      <p class = "join">Join our mailing list</p>
+
       <p>
         <%= form_for @interested do |f| %>
-        <%= f.text_field :email %>
-          <div id= "button"> <%= f.submit "Sign Up" %></div>
+        <%= f.text_field :email, placeholder: "tom@highfivejobs.com" %>
+      </p>
+          <div id= "button"> 
+            <%= f.submit "Submit" %>
+            
+          </div>
         
         <% end %>
-      </p>
     </div>
     
   </body></div>
