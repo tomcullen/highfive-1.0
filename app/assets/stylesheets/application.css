@@ -6,6 +6,11 @@
  *= require_self
  *= require_tree . 
 */
+
+#manage{
+	color: red;
+}
+
 html {
 	height: 100%;
 }

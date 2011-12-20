@@ -29,6 +29,19 @@ body.landing_page {
 	border-radius: 5px;
 }
 
+#manage{
+	color: 1965b2;
+	font: bold 1em/1.5em "Century Gothic", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 25px;
+	padding: 0 20 20 20px;
+}
+#join{
+	color: black;
+	font: bold 1em/1.5em "Century Gothic", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 15px;
+	padding: 20px;
+}
+
 #logo{
 width: 960px;
 text-align: center;
@@ -38,6 +51,7 @@ margin-top: 100px;
 #info{
 	text-align: center;
 	margin-top: -20px;
+	font-family: ,;
 }
 
 p.copy{
