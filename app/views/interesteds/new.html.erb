@@ -23,7 +23,6 @@
       <div id = "manage">Manage your job search</div>
       
       <div id = "join"> Coming Soon! Join our mailing list</div>
-
       <p>
         <%= form_for @interested do |f| %>
         <%= f.text_field :email, placeholder: "tom@highfivejobs.com" %>
@@ -36,5 +35,8 @@
         <% end %>
     </div>
     
+    <footer>
+     <div id = "blog"> <%= link_to 'Visit our Blog', 'http://highfivejobs.tumblr.com/' %></div>
+    </footer>
   </body></div>
 </html>

@@ -22,9 +22,6 @@ class CompaniesController < ApplicationController
   def show
     @company = Company.find(params[:id])
     
-    #if@currentuser.myfirms.company.find_by(params[:id]) || @current_user.contactcompanyjoins.find_by(params[:id])
-    #else
-    #redirect_to __url notice STOPHACKING
   end
   
   def create
