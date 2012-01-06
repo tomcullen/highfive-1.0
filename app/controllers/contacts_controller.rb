@@ -1,12 +1,12 @@
 class ContactsController < ApplicationController
   before_filter :require_user
-  
+
   # GET /contacts
   # GET /contacts.json
   def index
     # @contacts = Contact.all
     # @contact = session[:user_id]
-   # @contacts = Contact.find_by_user_id(:user_id)
+    # @contacts = Contact.find_by_user_id(:user_id)
     @user = User.find(session[:user_id])
     @contacts = @user.contacts
 
@@ -21,7 +21,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1.json
   def show
     @contact = Contact.find(params[:id])
-    
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @contact }
@@ -32,7 +32,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new.json
   def new
     @contact = Contact.new
-    
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -48,10 +48,10 @@ class ContactsController < ApplicationController
   # POST /contacts
   # POST /contacts.json
   def create
-    
+
     @contact = Contact.new(params[:contact])
     @contact.user = current_user
-    
+
 
 
     if Company.find_by_companyname(params[:company]).present?
@@ -59,11 +59,11 @@ class ContactsController < ApplicationController
     else
       company = Company.create :companyname => params[:company]
       #company.user_id = current_user
-      
+
     end
-      
-      
-      
+
+
+
     respond_to do |format|
       if @contact.save
         Contactcompanyjoin.create contact_id: @contact.id, :company_id => company.id

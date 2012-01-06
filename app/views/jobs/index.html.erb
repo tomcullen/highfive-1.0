@@ -1,37 +1,37 @@
 
 
 <table>
-  
-    <tr>
-      <th>Job Title</th>
-      <th>Company</th>
-      <th>Job Description</th>
-      <th>Website</th>
-      <th>Job Posted On</th>
-      <th>Salary</th>
-      <th>Career Field</th>
-      <th>Date Applied To</th>
-      <!-- <th>This Jobs Contacts:</th> -->
-    </tr>
+
+  <tr>
+    <th>Job Title</th>
+    <th>Company</th>
+    <th>Job Description</th>
+    <th>Website</th>
+    <th>Job Posted On</th>
+    <th>Salary</th>
+    <th>Career Field</th>
+    <th>Date Applied To</th>
+    <!-- <th>This Jobs Contacts:</th> -->
+  </tr>
 
 
 
-  <% @jobs.each do |f| %>
-    <tr>
-      <td><%= link_to f.jobtitle, job_url(f) %></td> 
-      <td><%= f.company.companyname %></td>
-      <td><%= f.jobdescription %></td>
-      <td><%= link_to f.postinglink, "http://#{f.postinglink}" %></td>
-      <td><%= f.dateofposting.strftime("%m/%d/%Y") %></td>
-      <td><%= f.salary %></td>
-      <td><%= f.careerfield %></td>
-      <td><%= f.dateappliedto.strftime("%m/%d/%Y") %></td>
-      <% f.contacts.each do|contact| %>
-      <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(f) %></td>
-      <% end %>
-      <% end %>
-    </tr>
-    
+  <% @jobs.each do |job| %>
+  <tr>
+    <td><%= link_to job.jobtitle, job_url(job) %></td> 
+    <td><%= link_to job.company.companyname, company_url(job.company) %></td>
+    <td><%= job.jobdescription %></td>
+    <td><%= link_to job.postinglink, "http://#{job.postinglink}" %></td>
+    <td><%= job.dateofposting.strftime("%m/%d/%Y") %></td>
+    <td><%= job.salary %></td>
+    <td><%= job.careerfield %></td>
+    <td><%= job.dateappliedto.strftime("%m/%d/%Y") %></td>
+    <% job.contacts.each do|contact| %>
+    <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(job) %></td>
+    <% end %>
+    <% end %>
+  </tr>
+
   <div id = "new_job_button">
-  <%= button_to "Add New Job", new_job_url %>
+    <%= button_to "Add New Job", new_job_url %>
   </div>

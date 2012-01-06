@@ -5,38 +5,38 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-   <script type="text/javascript">
-    var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-28050929-1']);
-     _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); 
-   </script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28050929-1']);
+  _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); 
+  </script>
 </head>
-  <div id="background_color">
-    <div id="container">
-  <header>
+<div id="background_color">
+  <div id="container">
+    <header>
       <div id="app_logo"><%= link_to (image_tag "high_five_logo.png"), root_url %></div>
-    
+
       <div id="top_nav">
         <%= notice %>
         <% if logged_in? %>
         <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url   
-            %></h2>
-            
+        %></h2>
+
         <p><%= link_to "My Profile", user_url(:user) %> | <%= link_to "Sign OUT!", sessions_destroy_url, :method => :delete %></p>
-        
+
         <% else %>
         <p><%= link_to "Sign IN!", sessions_new_url %> | <%= link_to "Sign up!", new_user_url %></p>
         <% end %>
       </div>
-    
-      <div class="clear"></div>
-     
-  </header>
-  <body>
 
-    <%= yield %>
-    
-  </body>
-      </div>
-    </div>
+      <div class="clear"></div>
+
+    </header>
+    <body>
+
+      <%= yield %>
+
+    </body>
+  </div>
+</div>
 </html>
