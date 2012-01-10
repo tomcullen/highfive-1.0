@@ -18,13 +18,13 @@ class Contact < ActiveRecord::Base
                     :length     => { :maximum => 50 }
   validates :lastname,  :presence   => true,
                     :length     => { :maximum => 50 }
-                    
+
   validates :email, :format      => { :with => email_regex },
                     :uniqueness  => {:case_sensitive => false}
-                    
-  validates :mainphone, :format  => { :with => phone_regex }
-  
-  validates :twitter,   :format  => { :with => phone_regex }
+
+  validates :mainphone,   :format  => { :with => phone_regex }
+  validates :workphone,   :format  => { :with => phone_regex }
+  validates :faxnumber,   :format  => { :with => phone_regex }
 
 
 end
