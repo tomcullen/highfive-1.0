@@ -33,5 +33,5 @@
   </tr>
 
   <div id = "new_job_button">
-    <%= button_to "Add New Job", new_job_url %>
+    <%= button_to "Add New Job", new_job_url, {:controller => 'jobs_controller', :action => 'new', :method => :get } %>
   </div>

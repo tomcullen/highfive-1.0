@@ -2,9 +2,12 @@ Highfive10::Application.routes.draw do
 
   root :to => 'interesteds#new'
   
-
+  get 'jobs/autocomplete_company_companyname', controller: "jobs", action: "autocomplete_company_companyname", as: :autocomplete_company_companyname
+# controller: "jobs", action: "autocomplete_companyname",
   resources :companies
   resources :jobs
+    # get :autocomplete_companyname, 
+
   resources :contacts
   resources :users
   

@@ -52,14 +52,11 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.user = current_user
 
-
-
     if Company.find_by_companyname(params[:company]).present?
       company = Company.find_by_companyname(params[:company])
     else
       company = Company.create :companyname => params[:company]
       #company.user_id = current_user
-
     end
 
 
@@ -81,9 +78,12 @@ class ContactsController < ApplicationController
   # PUT /contacts/1.json
   def update
     @contact = Contact.find(params[:id])
+    company = associate_company(params[:company])
 
     respond_to do |format|
       if @contact.update_attributes(params[:contact])
+        Contactcompanyjoin.create contact_id: @contact.id, :company_id => company.id
+        Myfirm.create user_id: current_user, :company_id => company.id
         format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
         format.json { head :ok }
       else
@@ -103,5 +103,16 @@ class ContactsController < ApplicationController
       format.html { redirect_to contacts_url }
       format.json { head :ok }
     end
+  end
+  
+  private
+  
+  def associate_company(name)
+    if Company.find_by_companyname(name).present?
+      company = Company.find_by_companyname(name)
+    else
+      company = Company.create :companyname => name
+      #company.user_id = current_user
+    end    
   end
 end

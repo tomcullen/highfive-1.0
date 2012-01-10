@@ -8,9 +8,11 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
+//= require autocomplete-rails
+
 
 $(function() {
-	$("#job_dateofposting").datepicker({
+	$("#job_dateofposting")({
 		//onSelect: function()
 	});
 });

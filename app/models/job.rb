@@ -9,5 +9,9 @@ class Job < ActiveRecord::Base
   belongs_to :company
   
   has_many :interactions
-  
+
+
+  validates :jobtitle,  :presence   => true,
+                         :length     => { :maximum => 50 }
+  validates_presence_of :company_id  
 end

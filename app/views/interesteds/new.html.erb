@@ -28,6 +28,9 @@
       
       <div id = "join"> Coming Soon! Join our mailing list</div>
       <p>
+        <% if @interested.errors.any? %>
+        <span id = "invalid_email">That is not a Valid email address.  Please put one in.</span>
+        <% end %>
         <%= form_for @interested do |f| %>
         <%= f.text_field :email, placeholder: "tom@highfivejobs.com" %>
       </p>

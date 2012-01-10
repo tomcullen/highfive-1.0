@@ -1,8 +1,17 @@
+<% if @contact.errors.any? %>
+  <div id="error_explanation">
+    <h2>Whoops! There were <%= pluralize(@contact.errors.count, "error") %> creating your account:</h2>
+    <ul>
+    <% @contact.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_for(@contact) do |f| %>
 
-  
 
-  
 
   <div class="field">
     <%= f.label "First Name" %>
@@ -14,7 +23,7 @@
   </div>  
   <div class="field">
     <%= f.label "Company" %>
-    <%= text_field_tag :company, nil, :placeholder => "Current Company" %>
+    <%= autocomplete_field_tag 'company', "", autocomplete_company_companyname_path, placeholder: "Company Name" %>
   </div>  
   <div class="field">
     <%= f.label "Email Address" %>

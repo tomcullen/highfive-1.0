@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111217163106) do
+ActiveRecord::Schema.define(:version => 20120110134534) do
 
   create_table "companies", :force => true do |t|
     t.string   "companyname"
@@ -37,9 +37,9 @@ ActiveRecord::Schema.define(:version => 20111217163106) do
     t.string   "twitter"
     t.string   "linkedin"
     t.string   "facebook"
-    t.integer  "mainphone"
-    t.integer  "workphone"
-    t.integer  "faxnumber"
+    t.string   "mainphone"
+    t.string   "workphone"
+    t.string   "faxnumber"
     t.string   "meetups"
     t.string   "meetup_url"
     t.text     "otherinfo"

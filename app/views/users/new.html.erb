@@ -1,5 +1,16 @@
 <h1>Create a new account here!</h1>
 
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2>Whoops! There were <%= pluralize(@user.errors.count, "error") %> creating your account:</h2>
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
 
 <%= form_for (@user) do |f| %>
 <p>First Name: <%= f.text_field :firstname %></p>

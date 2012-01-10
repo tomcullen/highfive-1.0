@@ -7,9 +7,12 @@ layout nil
   
   def create
     @interested = Interested.new(params[:interested])
-    @interested.save
-    redirect_to new_interested_url, notice: "Thanks for Signing Up!"
     
+    if @interested.save
+    redirect_to new_interested_url, notice: "Thanks for Signing Up!"
+  else
+    render :new
+  end
   end
 
 end

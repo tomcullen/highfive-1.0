@@ -8,7 +8,9 @@ class Company < ActiveRecord::Base
   has_many :myfirms
   has_many :users, through: :myfirms
 
-
+  validates_presence_of :companyname
+  
+  
   # def self.from_input(params[:company])
   #   find_by_companyname(params[:company].capitalize) || create_new_from_input(params[:company])
   # end

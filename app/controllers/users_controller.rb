@@ -5,11 +5,11 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    @user.save
-    redirect_to contacts_url
-
-    
-    
+    if @user.save
+      redirect_to contacts_url
+    else
+      render :new
+    end
   end
 
   def show

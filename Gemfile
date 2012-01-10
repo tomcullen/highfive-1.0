@@ -27,6 +27,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rails3-jquery-autocomplete', :git => 'https://github.com/gmassanek/rails3-jquery-autocomplete.git'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'

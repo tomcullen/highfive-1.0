@@ -7,4 +7,19 @@ class User < ActiveRecord::Base
   has_many :myfirms
   has_many :companies, through: :myfirms
   
+  
+  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  
+  validates :firstname,  :presence   => true,
+                    :length     => { :maximum => 50 }
+  validates :lastname,  :presence   => true,
+                    :length     => { :maximum => 50 }
+  validates :email, :presence   => true,
+                    :format     => { :with => email_regex },
+                    :uniqueness  => {:case_sensitive => false}
+  validates :password, :presence => true,
+                        :confirmation => true,
+                        :length => {:within => 6..40 }
+  
+  
 end
