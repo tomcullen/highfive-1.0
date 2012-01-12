@@ -13,3 +13,6 @@
 <p>Date Applied to: <%= @job.dateappliedto %></p>
 
 <%= link_to "Edit this Job Here", edit_job_url %>
+<%= link_to "Delete this Job Here", job_url, :method => :delete, confirm: "Are you sure you want to delete this job?" %>
+
+

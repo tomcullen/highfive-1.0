@@ -1,15 +1,24 @@
 class JobsController < ApplicationController
   before_filter :require_user
+  before_filter :set_job, only: [:show, :edit, :destroy]
+
   autocomplete :company, :companyname, full: true, auto_focus: true
+
+  def set_job
+    if current_user.jobs.find_by_id(params[:id])
+      @job = Job.find(params[:id])
+      @company = @job.company 
+    else
+      redirect_to jobs_url, notice: "You dont have access to that page."
+    end
+  end
 
   def new
     @job = Job.new
   end
 
   def show
-    @job = Job.find(params[:id])
-    @company = @job.company 
-
+    
   end
 
   def index
@@ -17,7 +26,11 @@ class JobsController < ApplicationController
   end
 
   def edit
-    @job = Job.find(params[:id])
+  end
+  
+  def destroy
+    @job.destroy
+    redirect_to jobs_url, notice: "Job deleted"
   end
 
   def create

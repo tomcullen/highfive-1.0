@@ -5,4 +5,9 @@ class Contactcompanyjoin < ActiveRecord::Base
   # def self.unique_companies
   #   current_user.companies.uniq!
   # end
+  
+
+
+
+  
 end

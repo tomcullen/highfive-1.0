@@ -11,7 +11,7 @@ class CompaniesController < ApplicationController
   end
 
   def index
-    @companies = current_user.companies.uniq!
+    @companies = current_user.companies.uniq
   end
 
   def show

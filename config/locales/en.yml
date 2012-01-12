@@ -3,3 +3,10 @@
 
 en:
   hello: "Hello world"
+
+
+  en:
+    activerecord:
+      attributes:
+        contacts:
+          firstname: "First Name"

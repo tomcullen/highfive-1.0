@@ -17,7 +17,6 @@
       <div id="app_logo"><%= link_to (image_tag "high_five_logo.png"), root_url %></div>
 
       <div id="top_nav">
-        <%= notice %>
         <% if logged_in? %>
         <h2><%= link_to "CONTACTS", contacts_url  %> | <%= link_to "JOBS", jobs_url %> | <%= link_to "COMPANIES", companies_url   
         %></h2>
@@ -33,7 +32,7 @@
 
     </header>
     <body>
-
+      <div id="flash_notice"><%= flash[:notice] %></div>
       <%= yield %>
 
     </body>

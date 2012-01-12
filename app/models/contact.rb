@@ -20,11 +20,18 @@ class Contact < ActiveRecord::Base
                     :length     => { :maximum => 50 }
 
   validates :email, :format      => { :with => email_regex },
-                    :uniqueness  => {:case_sensitive => false}
-
-  validates :mainphone,   :format  => { :with => phone_regex }
-  validates :workphone,   :format  => { :with => phone_regex }
-  validates :faxnumber,   :format  => { :with => phone_regex }
+                    :uniqueness  => {:case_sensitive => false}, allow_blank: true
 
 
+  validates :mainphone,   :format  => { :with => phone_regex }, allow_blank: true
+  
+  
+  
+  validates :workphone,   :format  => { :with => phone_regex }, allow_blank: true
+  validates :faxnumber,   :format  => { :with => phone_regex }, allow_blank: true
+
+
+  
+
+  
 end

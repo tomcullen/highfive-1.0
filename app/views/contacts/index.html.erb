@@ -4,7 +4,7 @@
   <tr>
     
     <th>Name</th>
-    <th>Company</th>
+    <th>Companies</th>
     <th>Title</th>
     <th>Meetups</th>
     <th>Meetup Website</th>
@@ -21,9 +21,11 @@
   <tr>
     <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %></td>
     
-    <td><% contact.companies.each do |company| %>
-      <%= link_to company.companyname, company_url(company) %></td>
-    <% end %>
+    <td>
+      <% contact.companies.each do |company| %>
+        <%= link_to company.companyname, company_url(company) %><br />
+      <% end %>
+    </td>
     <td><%= contact.jobtitle %></td>
     <td><%= contact.meetups %></td>
     <td><%= link_to contact.meetup_url, "http://#{contact.meetup_url}" %></td>
