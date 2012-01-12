@@ -6,8 +6,7 @@ Highfive10::Application.routes.draw do
 # controller: "jobs", action: "autocomplete_companyname",
   resources :companies
   resources :jobs
-    # get :autocomplete_companyname, 
-
+  resources :jobconnections
   resources :contacts
   resources :users
   
@@ -19,6 +18,7 @@ Highfive10::Application.routes.draw do
   get "sessions/new"
   post "sessions/create"
   delete "sessions/destroy"
+  get "sessions/beta"
      
   
 

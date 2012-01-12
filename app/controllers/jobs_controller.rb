@@ -57,5 +57,7 @@ class JobsController < ApplicationController
     @job.save
     redirect_to job_url
   end
+  
+
 
 end

@@ -19,6 +19,8 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	font-family: "Century Gothic";
+	font-size: small;
 }
 
 #background_color {
@@ -26,16 +28,21 @@ body {
 	height: 100%;
 }
 
-
 #container {
 	background-color: #FFFFFF;
 	width: 960px;
 	margin: 0px auto;
 	padding: 0px 30px;
-	height: 100%;
-	
+	height: 100%;	
 }
 
+p {
+	margin: 4px 0;
+}
+
+b {
+	font-weight: bold;
+}
 em{
 	font-style: italic;
 	font-size: smaller;
@@ -50,6 +57,16 @@ em{
 	text-align: right;
 }
 
+#page_header {
+	font-weight: bold;
+	font-size: larger;
+	color: #005bab;
+	margin-bottom: 5px;
+}
+
+#add_new_link {
+	font-size: smaller;
+}
 
 #to_do_list{
 	float: center;
@@ -72,32 +89,25 @@ em{
 li:nth-child(odd)    {
 	 background-color: rgba(24, 101, 178, 0.25); 
 	 padding: 10px;
-	 font-size: 15px;
  }
 li:nth-child(even)    { 
 	background-color: rgba(137, 187, 40, 0.25); 
 	padding: 10px;
-	font-size: 15px;
 }
 tr:nth-child(odd)    {
 	background-color: rgba(24, 101, 178, 0.25); 
 	padding: 10px;
-	font-size: 25px;
 }
 tr:nth-child(even)    { 
 	background-color: rgba(137, 187, 40, 0.25); 
 	padding: 10px;
-	font-size: 25px;
 }
-
 
 td{
 	color: black;
 	border: 1px solid silver;
-	
-	font-size: 20px;
-	font-weight: 500;
-	padding: 8px 2px;
+	padding: 3px;
+	font-size: smaller;
 }
 th{
 	color: black;
@@ -108,16 +118,14 @@ th{
 	
 }
 
-
-
 #new_job_button input {
-	width: 125px;
-	height: 40px;
+	width: 90px;
+	height: 30px;
 	color: #ffffff;
 	background-color: rgba(24, 101, 178, 0.98);
 	border: 1px solid silver;
 	border-radius: 5px;
-	font-size: 15px;
+	font-size: 12px;
 	margin: 5px 0px;
 }
 
@@ -129,11 +137,89 @@ th{
 	clear: both;
 }
 
+#new_contact_form {
+	border-radius: 5px;
+	background-color: rgba(146, 204, 0, 0.71);
+	padding: 5px;
+	font-size: smaller;
+	width: 275px;
+	color: white;
+}
+
+div.field {
+	text-align: right;
+}
+
+div.actions {
+	margin-top: 5px;
+}
+#contact_home_form {
+	float: right;
+	display: none;
+}
+
+
+#add_new_link {
+	margin: 5px 0px;
+}
+
+#item_links {
+	margin: 10px 0 0 0 ;
+}
+
+
+th {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 13px;
+line-height: 15px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000;
+  &:visited {
+    color: #666; }
+  &:hover {
+    color: #fff;
+    background-color: #000; } }
+
+#notice {
+  color: white;
+  font-weight:bold 
+  }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  ul li {
+    font-size: 12px;
+    list-style: none; 
+    } 
+   }
 
 
 
-
-  
 
 /*#social_networks {
 	float: right;

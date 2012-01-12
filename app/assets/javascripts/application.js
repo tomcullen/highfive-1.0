@@ -11,18 +11,28 @@
 //= require autocomplete-rails
 
 
+
+
+
 $(function() {
+	
+	$("#add_new_link").click(function(event){
+		$("#contact_home_form").slideToggle();
+		event.preventDefault();
+	});
+	
 	$("#job_dateofposting")({
 		//onSelect: function()
 	});
-});
-
-
-$(function() {
+	
 	$("#job_dateappliedto").datepicker({
 		//onSelect: function()
 	});
+	
+
+	
 });
+
 
 
 

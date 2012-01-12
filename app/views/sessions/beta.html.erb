@@ -1,0 +1,46 @@
+
+  
+  
+  
+  
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>High Five - Jobs</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28050929-1']);
+    _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); 
+    </script>
+  </head>
+  <div id="background_color">
+    <div id="container">
+      <header>
+        <div id="app_logo"><%= link_to (image_tag "high_five_logo.png"), contacts_url %></div>
+
+        
+
+        <div class="clear"></div>
+
+      </header>
+      <body>
+        <% if flash[:notice].present? %>
+          <div id="notice"><%= flash[:notice] %></div>
+        <% end %>
+        <div id="page_header">Log into your HIGH FIVE account!</div>
+
+
+        <%= form_tag sessions_create_url do %>
+        <p>Email: <%= text_field_tag :email %></p>
+        <p>Password: <%= text_field_tag :password %></p>
+        <p>  <%= submit_tag "Sign in to HIGH FIVE" %></p>
+          <% end %>
+
+
+      </body>
+    </div>
+  </div>
+  </html>

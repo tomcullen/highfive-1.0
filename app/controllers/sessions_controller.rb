@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
   def new
     
   end
@@ -9,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to contacts_url, notice: "Welcome #{user.firstname}!"
     else
-      render :new
+      redirect_to sessions_new_url, notice: "Login error. Please try again."
     end
   end
 
@@ -17,5 +18,7 @@ class SessionsController < ApplicationController
     reset_session
     redirect_to sessions_new_url, notice: "You have logged out"
   end
+  
+
 
 end

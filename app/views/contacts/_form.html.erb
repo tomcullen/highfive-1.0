@@ -9,69 +9,69 @@
   </div>
 <% end %>
 
-<%= form_for(@contact) do |f| %>
-
-
-
-  <div class="field">
-    <%= f.label "First Name" %>
-    <%= f.text_field :firstname %>
-  </div>
-  <div class="field">
-    <%= f.label "Last Name" %>
-    <%= f.text_field :lastname, :placeholder => "last name" %>
-  </div>  
-  <div class="field">
-    <%= f.label "Company" %>
-    <%= autocomplete_field_tag 'company', "", autocomplete_company_companyname_path, placeholder: "Company Name" %>
-  </div>  
-  <div class="field">
-    <%= f.label "Email Address" %>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-      <%= f.label "Home/Cell #" %>
-      <%= f.text_field :mainphone %>
+<div id="new_contact_form">
+  <div id="page_header">New Contact:</div>
+  <%= form_for(@contact) do |f| %>
+    <div class="field">
+      <%= f.label "First Name" %>
+      <%= f.text_field :firstname %>
     </div>
     <div class="field">
-      <%= f.label "Work #" %>
-      <%= f.number_field :workphone %>
+      <%= f.label "Last Name" %>
+      <%= f.text_field :lastname, :placeholder => "last name" %>
+    </div>  
+    <div class="field">
+      <%= f.label "Company" %>
+      <%= autocomplete_field_tag 'company', "", autocomplete_company_companyname_path, placeholder: "Company Name", size: 30 %>
+    </div>  
+    <div class="field">
+      <%= f.label "Email Address" %>
+      <%= f.text_field :email %>
     </div>
-  <div class="field">
-    <%= f.label "Job Title" %>
-    <%= f.text_field :jobtitle %>
-  </div>
-  <div class="field">
-    <%= f.label "Twitter handle" %>
-    <%= f.text_field :twitter %>
-  </div>
-  <div class="field">
-    <%= f.label "LinkedIn" %>
-    <%= f.text_field :linkedin %>
-  </div>
-  <div class="field">
-    <%= f.label "Facebook" %>
-    <%= f.text_field :facebook %>
-  </div>
+    <div class="field">
+        <%= f.label "Home/Cell #" %>
+        <%= f.text_field :mainphone %>
+      </div>
+      <div class="field">
+        <%= f.label "Work #" %>
+        <%= f.text_field :workphone %>
+      </div>
+    <div class="field">
+      <%= f.label "Job Title" %>
+      <%= f.text_field :jobtitle %>
+    </div>
+    <div class="field">
+      <%= f.label "Twitter handle" %>
+      <%= f.text_field :twitter %>
+    </div>
+    <div class="field">
+      <%= f.label "LinkedIn" %>
+      <%= f.text_field :linkedin %>
+    </div>
+    <div class="field">
+      <%= f.label "Facebook" %>
+      <%= f.text_field :facebook %>
+    </div>
 
-  <div class="field">
-    <%= f.label "Fax #" %>
-    <%= f.number_field :faxnumber %>
-  </div>
-  <div class="field">
-    <%= f.label "Meetups" %>
-    <%= f.text_field :meetups %>
-  </div>
-  <div class="field">
-    <%= f.label "Meetup links" %>
-    <%= f.text_field :meetup_url %>
-  </div>
-  <div class="field">
-    <%= f.label "Other Info" %>
-    <%= f.text_area :otherinfo %>
-  </div>
+    <div class="field">
+      <%= f.label "Fax #" %>
+      <%= f.text_field :faxnumber %>
+    </div>
+    <div class="field">
+      <%= f.label "Meetups" %>
+      <%= f.text_field :meetups %>
+    </div>
+    <div class="field">
+      <%= f.label "Meetup links" %>
+      <%= f.text_field :meetup_url %>
+    </div>
+    <div class="field" valign="middle">
+      <span class="other_info"><%= f.label "Other Info" %></span>
+      <%= f.text_area :otherinfo, :cols => "23", :rows => "10" %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+    <div class="actions">
+      <p align="center"><%= f.submit %></p>
+    </div>
+  <% end %>
+</div>

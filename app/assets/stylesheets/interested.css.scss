@@ -19,13 +19,11 @@ body.landing_page {
 }
 
 #notice {
-	font-family: Verdana;
 	text-align: center;
-	width: 900px;
 	background-color: #1965b2;
 	color: white;
-	margin: 2px auto;
-	padding: 20px;
+	margin: 10px auto;
+	padding: 10px;
 	border-radius: 5px;
 }
 
@@ -63,10 +61,14 @@ margin-bottom: 50px ;
   font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+#beta_log_in {
+	text-align: center;
+}
+
 #blog {
 text-align: center;
 padding-top: 20px;
-	font: bold 1em/1.5em "Century Gothic", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 2em/2.5em "Century Gothic", Arial, Helvetica, Geneva, sans-serif;
 	color: #1964b0;
 }
 

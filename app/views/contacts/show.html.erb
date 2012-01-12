@@ -1,80 +1,80 @@
-<p id="notice"><%= notice %></p>
+<div id="page_header">Contact Information</div>
 
-<%= link_to "Delete Contact", contact_url, :method => :delete %>
-<p>
-  <b>Firstname:</b>
-  <%= @contact.firstname %>
-</p>
+  <p>
+    <strong>Firstname:</strong>
+    <%= @contact.firstname %>
+  </p>
 
-<p>
-  <b>Lastname:</b>
-  <%= @contact.lastname %>
-</p>
-<p>
-  <b>Company Name:</b>
-  <% @contact.companies.each do |company| %>
-  <%= link_to company.companyname, company_url(company) %></td>
+  <p>
+    <strong>Lastname:</strong>
+    <%= @contact.lastname %>
+  </p>
+  <br />
+  <p>
+    <strong>Company Name:</strong>
+    <% @contact.companies.each do |company| %>
+    <%= link_to company.companyname, company_url(company) %></td>
   
-  <% end %>
-</p>
+    <% end %>
+  </p>
 
-<p>
-  <b>Jobtitle:</b>
-  <%= @contact.jobtitle %>
-</p>
+  <p>
+    <strong>Jobtitle:</strong>
+    <%= @contact.jobtitle %>
+  </p>
+  <br />
+  <p>
+    <strong>Email:</strong>
+    <%= @contact.email %>
+  </p>
 
-<p>
-  <b>Email:</b>
-  <%= @contact.email %>
-</p>
+  <p>
+    <strong>Twitter:</strong>
+    <%= @contact.twitter %>
+  </p>
 
-<p>
-  <b>Twitter:</b>
-  <%= @contact.twitter %>
-</p>
+  <p>
+    <strong>Linkedin:</strong>
+    <%= @contact.linkedin %>
+  </p>
 
-<p>
-  <b>Linkedin:</b>
-  <%= @contact.linkedin %>
-</p>
+  <p>
+    <strong>Facebook:</strong>
+    <%= @contact.facebook %>
+  </p>
+  <br />
+  <p>
+    <strong>Primary #:</strong>
+    <%= @contact.mainphone %>
+  </p>
 
-<p>
-  <b>Facebook:</b>
-  <%= @contact.facebook %>
-</p>
+  <p>
+    <strong>Work #:</strong>
+    <%= @contact.workphone %>
+  </p>
 
-<p>
-  <b>Mainphone:</b>
-  <%= @contact.mainphone %>
-</p>
+  <p>
+    <strong>Fax #:</strong>
+    <%= @contact.faxnumber %>
+  </p>
+  <br />
+  <p>
+    <strong>Meetups:</strong>
+    <%= @contact.meetups %>
+  </p>
 
-<p>
-  <b>Workphone:</b>
-  <%= @contact.workphone %>
-</p>
+  <p>
+    <strong>Meetup url:</strong>
+    <%= link_to @contact.meetup_url, "http://#{@contact.meetup_url}" %>
+  </p>
+  <br />
+  <p>
+    <strong>Otherinfo:</strong>
+    <%= @contact.otherinfo %>
+  </p>
 
-<p>
-  <b>Faxnumber:</b>
-  <%= @contact.faxnumber %>
-</p>
-
-<p>
-  <b>Meetups:</b>
-  <%= @contact.meetups %>
-</p>
-
-<p>
-  <b>Meetup url:</b>
-  <%= link_to @contact.meetup_url, "http://#{@contact.meetup_url}" %>
-</p>
-
-<p>
-  <b>Otherinfo:</b>
-  <%= @contact.otherinfo %>
-</p>
-
-
-
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
-
+<div id="item_links">
+  <%= link_to 'Edit', edit_contact_path(@contact) %> | 
+  <%= link_to "Delete", contact_url, :method => :delete, confirm: "Are you sure you want to delete this contact?" %> | 
+  <%= link_to 'Back', contacts_path %>
+</div>

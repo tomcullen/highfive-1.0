@@ -1,2 +1,17 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div id="page_header"><%= @user.firstname %></div>
+
+<%= link_to "Edit Profile", edit_user_url(@user) %>
+<p>
+  <strong>First Name</strong>: 
+  <%= @user.firstname %>
+</p>
+
+<p>
+  <strong>Last Name</strong>: 
+  <%= @user.lastname %>
+</p>
+
+<p>
+  <strong>Email</strong>: 
+  <%= @user.email %>
+</p>

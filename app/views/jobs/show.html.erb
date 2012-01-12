@@ -7,10 +7,10 @@
 <p>Job Description: <%= @job.jobdescription %></p>
 <p>Posting Link: <%= link_to @job.postinglink, "http://#{@job.postinglink}" %></p>
 
-<p>Date of Posting: <%= @job.dateofposting %></p>
+<p>Date of Posting: <%= @job.dateofposting.strftime("%m/%d/%Y") %></p>
 <p>Salary: <%= @job.salary %></p>
 <p>Career Field: <%= @job.careerfield %></p>
-<p>Date Applied to: <%= @job.dateappliedto %></p>
+<p>Date Applied to: <%= @job.dateappliedto.strftime("%m/%d/%Y") %></p>
 
 <%= link_to "Edit this Job Here", edit_job_url %>
 <%= link_to "Delete this Job Here", job_url, :method => :delete, confirm: "Are you sure you want to delete this job?" %>

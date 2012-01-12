@@ -3,10 +3,8 @@ class ContactsController < ApplicationController
   before_filter :set_contact, :only => [:edit, :show, :destroy]
     
   def index
-    # @contacts = Contact.all
-    # @contact = session[:user_id]
-    # @contacts = Contact.find_by_user_id(:user_id)
-    @contacts = current_user.contacts
+    @contact = Contact.new
+    @contacts = current_user.contacts.sort_by{|p| p.lastname.downcase}
 
   end
 
@@ -71,7 +69,7 @@ class ContactsController < ApplicationController
     if current_user.contacts.find_by_id(params[:id])
       @contact = current_user.contacts.find_by_id(params[:id])
     else
-      redirect_to contacts_url, notice: "You don't have access to this page"
+      redirect_to contacts_url, notice: "You don't have access to that page"
     end
   end
   

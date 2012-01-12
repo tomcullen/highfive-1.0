@@ -1,35 +1,31 @@
-<h1>Listing contacts</h1>
+<div id="page_header">CONTACTS</div>
 
-<table>
+<div id="add_new_link"><%= link_to 'Add New Contact', new_contact_url, :remote => true %></div>
+
+<div id="contact_home_form">
+  <%= render "/contacts/form" %>
+</div>
+
+<table width="600px">
   <tr>
     
     <th>Name</th>
     <th>Companies</th>
-    <th>Title</th>
-    <th>Meetups</th>
-    <th>Meetup Website</th>
-    <th>Notes</th>
-    <th>Mainphone</th>
-
+    <th>Current Title</th>
+    <th>Primary Phone</th>
   </tr>
   
-  
-
-
 
 <% @contacts.each do |contact| %>
   <tr>
     <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %></td>
     
     <td>
-      <% contact.companies.each do |company| %>
-        <%= link_to company.companyname, company_url(company) %><br />
-      <% end %>
+        <% contact.companies.each do |company| %>
+          <p class="contact_companies"><%= link_to company.companyname, company_url(company) %></p>
+        <% end %>
     </td>
     <td><%= contact.jobtitle %></td>
-    <td><%= contact.meetups %></td>
-    <td><%= link_to contact.meetup_url, "http://#{contact.meetup_url}" %></td>
-    <td><%= contact.otherinfo %></td>
     <td><%= contact.mainphone %></td>
 
 
@@ -39,4 +35,4 @@
 
 <br />
 
-<%= link_to 'New Contact', new_contact_path %>
+

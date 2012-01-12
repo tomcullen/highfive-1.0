@@ -1,37 +1,32 @@
+<div id = "new_job_button">
+  <%= button_to "Add New Job", new_job_url, {:controller => 'jobs_controller', :action => 'new', :method => :get } %>
+</div>
 
-
-<table>
+<table width="600px">
 
   <tr>
     <th>Job Title</th>
     <th>Company</th>
-    <th>Job Description</th>
     <th>Website</th>
-    <th>Job Posted On</th>
-    <th>Salary</th>
-    <th>Career Field</th>
-    <th>Date Applied To</th>
-    <!-- <th>This Jobs Contacts:</th> -->
+    <th>Posted On</th>
+    <th>Applied To</th>
+    <th>Contacts</th>
   </tr>
-
-
 
   <% @jobs.each do |job| %>
   <tr>
     <td><%= link_to job.jobtitle, job_url(job) %></td> 
-    <td><%= link_to job.company.companyname, company_url(job.company) %></td>
-    <td><%= job.jobdescription %></td>
+    <td><%= link_to job.company.companyname, company_url(job.company) %></td>    
     <td><%= link_to job.postinglink, "http://#{job.postinglink}" %></td>
     <td><%= job.dateofposting.strftime("%m/%d/%Y") %></td>
-    <td><%= job.salary %></td>
-    <td><%= job.careerfield %></td>
     <td><%= job.dateappliedto.strftime("%m/%d/%Y") %></td>
-    <% job.contacts.each do|contact| %>
-    <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(job) %></td>
-    <% end %>
+    <td>
+      <% job.contacts.each do|contact| %>
+        <%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(job) %>    
+      <% end %>
+      <%= link_to "Link Contact", new_jobconnection_url(job_id: job.id)  %>
+    </td>
     <% end %>
   </tr>
+</table>
 
-  <div id = "new_job_button">
-    <%= button_to "Add New Job", new_job_url, {:controller => 'jobs_controller', :action => 'new', :method => :get } %>
-  </div>

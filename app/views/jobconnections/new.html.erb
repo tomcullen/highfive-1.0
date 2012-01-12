@@ -1,0 +1,8 @@
+<div id="page_header">Associate a Current Contact or Add A New Contact for this Job</div>
+
+<%= form_for @jobconnection do |job| %>
+  <%= job.collection_select :contact_id, @contacts, :id, :lastname, prompt: true %>
+  <%= job.submit %>
+<% end %>
+
+<%= render 'contacts/form' %>
