@@ -40,12 +40,11 @@ p {
 	margin: 4px 0;
 }
 
-b {
+strong {
 	font-weight: bold;
 }
 em{
 	font-style: italic;
-	font-size: smaller;
 }
 #app_logo {
 	float: left;
@@ -87,12 +86,12 @@ em{
 }
 
 li:nth-child(odd)    {
-	 background-color: rgba(24, 101, 178, 0.25); 
-	 padding: 10px;
+/*	 background-color: rgba(24, 101, 178, 0.25); 
+	 padding: 10px;*/
  }
 li:nth-child(even)    { 
-	background-color: rgba(137, 187, 40, 0.25); 
-	padding: 10px;
+/*	background-color: rgba(137, 187, 40, 0.25); 
+	padding: 10px;*/
 }
 tr:nth-child(odd)    {
 	background-color: rgba(24, 101, 178, 0.25); 
@@ -179,12 +178,16 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
-  &:visited {
-    color: #666; }
-  &:hover {
-    color: #fff;
-    background-color: #000; } }
+  color: black;
+  text-decoration: none;
+  
+  }
+  
+a:visited {
+    color: black; }
+ 
+a:hover {
+text-decoration: underline;
 
 #notice {
   color: white;
@@ -217,8 +220,16 @@ a {
     list-style: none; 
     } 
    }
+   
+/*#contact_list li {
+	text-decoration: none;
+	background-color: none;
+	padding: 4px;
+}*/
 
-
+#contact_list    {
+	 padding: 5px;
+ }
 
 
 /*#social_networks {

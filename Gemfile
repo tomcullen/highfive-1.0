@@ -9,6 +9,7 @@ gem 'thin'
 
 group :development do
   gem 'sqlite3'
+  gem 'rspec-rails'
 end
 
 group :production do
@@ -44,4 +45,5 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
+  gem 'rspec'
 end

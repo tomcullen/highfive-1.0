@@ -4,9 +4,17 @@
 en:
   hello: "Hello world"
 
+en:
+  contacts:
+    new:
+      firstname: "My First Name"
 
-  en:
-    activerecord:
-      attributes:
-        contacts:
-          firstname: "First Name"
+
+          # en:
+          #          activerecord:
+          #            models:
+          #              user: Dude
+          #            attributes:
+          #              user:
+          #                login: "Handle"
+          #              # will translate User attribute "login" as "Handle"

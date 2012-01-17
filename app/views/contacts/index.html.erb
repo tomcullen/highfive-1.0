@@ -12,7 +12,8 @@
     <th>Name</th>
     <th>Companies</th>
     <th>Current Title</th>
-    <th>Primary Phone</th>
+    <th>Phone</th>
+    <th>Job Leads</th>
   </tr>
   
 
@@ -27,6 +28,14 @@
     </td>
     <td><%= contact.jobtitle %></td>
     <td><%= contact.mainphone %></td>
+    <td>
+      <% if contact.jobs.any? %>
+      <% contact.jobs.each do |job| %>
+      <p><%= link_to "#{job.jobtitle}", job_url(job) %></p>
+      <% end %>
+      <% end %>
+      
+    </td>
 
 
   </tr>

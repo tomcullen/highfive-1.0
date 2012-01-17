@@ -1,5 +1,8 @@
 <div id="page_header">Contact Information</div>
 
+<em><%= link_to "Add Job Lead", new_jobconnection_url(contact_id: @contact.id) %></em>
+
+  
   <p>
     <strong>Firstname:</strong>
     <%= @contact.firstname %>

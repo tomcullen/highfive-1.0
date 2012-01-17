@@ -1,8 +1,19 @@
-<div id="page_header">Associate a Current Contact or Add A New Contact for this Job</div>
 
-<%= form_for @jobconnection do |job| %>
-  <%= job.collection_select :contact_id, @contacts, :id, :lastname, prompt: true %>
-  <%= job.submit %>
-<% end %>
+<p>
+  <%= form_for @jobconnection do |job| %>
+  <% if @job.present? %>
+    <div id="page_header">Associate a Current Contact with job: <%= @job.jobtitle %> at <%= @job.company.companyname %></div>
+    <%= job.collection_select :contact_id, @contacts, :id, :lastname, prompt: true %>
+    <%= job.hidden_field :job_id %>
+  <% elsif @contact.present? %>
+  <div id="page_header">Associate a Current Job with contact: <%= @contact.firstname %> at <%=@contact.lastname %></div>
+  <%= job.collection_select :job_id, @jobs, :id, :jobtitle, prompt: true %>
+  <%= job.hidden_field :contact_id %>    
+  <% end %>
+    
+    <%= job.submit %>
+  <% end %>
+</p>
 
-<%= render 'contacts/form' %>
+<p><em>If a contact is not listed here: <%= link_to "Add a new one!", new_contact_url %></em> </p>
+

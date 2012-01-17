@@ -1,0 +1,45 @@
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (19.9ms)[0m  INSERT INTO "jobconnections" ("contact_id", "created_at", "job_id", "note", "updated_at") VALUES (?, ?, ?, ?, ?)  [["contact_id", nil], ["created_at", Mon, 16 Jan 2012 22:39:35 UTC +00:00], ["job_id", nil], ["note", nil], ["updated_at", Mon, 16 Jan 2012 22:39:35 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (41.0ms)[0m  INSERT INTO "jobconnections" ("contact_id", "created_at", "job_id", "note", "updated_at") VALUES (?, ?, ?, ?, ?)  [["contact_id", nil], ["created_at", Mon, 16 Jan 2012 22:40:29 UTC +00:00], ["job_id", nil], ["note", nil], ["updated_at", Mon, 16 Jan 2012 22:40:29 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (40.8ms)[0m  INSERT INTO "jobconnections" ("contact_id", "created_at", "job_id", "note", "updated_at") VALUES (?, ?, ?, ?, ?)  [["contact_id", nil], ["created_at", Mon, 16 Jan 2012 22:42:36 UTC +00:00], ["job_id", nil], ["note", nil], ["updated_at", Mon, 16 Jan 2012 22:42:36 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (40.2ms)[0m  INSERT INTO "jobconnections" ("contact_id", "created_at", "job_id", "note", "updated_at") VALUES (?, ?, ?, ?, ?)  [["contact_id", nil], ["created_at", Mon, 16 Jan 2012 22:44:15 UTC +00:00], ["job_id", nil], ["note", nil], ["updated_at", Mon, 16 Jan 2012 22:44:15 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (16.3ms)[0m  INSERT INTO "contacts" ("created_at", "email", "facebook", "faxnumber", "firstname", "jobtitle", "lastname", "linkedin", "mainphone", "meetup_url", "meetups", "otherinfo", "twitter", "updated_at", "user_id", "workphone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 16 Jan 2012 22:47:23 UTC +00:00], ["email", nil], ["facebook", nil], ["faxnumber", nil], ["firstname", "John"], ["jobtitle", nil], ["lastname", "Wayne"], ["linkedin", nil], ["mainphone", nil], ["meetup_url", nil], ["meetups", nil], ["otherinfo", nil], ["twitter", nil], ["updated_at", Mon, 16 Jan 2012 22:47:23 UTC +00:00], ["user_id", nil], ["workphone", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (15.5ms)[0m  INSERT INTO "contacts" ("created_at", "email", "facebook", "faxnumber", "firstname", "jobtitle", "lastname", "linkedin", "mainphone", "meetup_url", "meetups", "otherinfo", "twitter", "updated_at", "user_id", "workphone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 16 Jan 2012 22:47:49 UTC +00:00], ["email", nil], ["facebook", nil], ["faxnumber", nil], ["firstname", "John"], ["jobtitle", nil], ["lastname", "Wayne"], ["linkedin", nil], ["mainphone", nil], ["meetup_url", nil], ["meetups", nil], ["otherinfo", nil], ["twitter", nil], ["updated_at", Mon, 16 Jan 2012 22:47:49 UTC +00:00], ["user_id", nil], ["workphone", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "jobconnections" ("contact_id", "created_at", "job_id", "note", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["contact_id", 1], ["created_at", Mon, 16 Jan 2012 22:47:49 UTC +00:00], ["job_id", 1], ["note", nil], ["updated_at", Mon, 16 Jan 2012 22:47:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (15.5ms)[0m  INSERT INTO "contacts" ("created_at", "email", "facebook", "faxnumber", "firstname", "jobtitle", "lastname", "linkedin", "mainphone", "meetup_url", "meetups", "otherinfo", "twitter", "updated_at", "user_id", "workphone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 16 Jan 2012 22:48:56 UTC +00:00], ["email", nil], ["facebook", nil], ["faxnumber", nil], ["firstname", "John"], ["jobtitle", nil], ["lastname", "Wayne"], ["linkedin", nil], ["mainphone", nil], ["meetup_url", nil], ["meetups", nil], ["otherinfo", nil], ["twitter", nil], ["updated_at", Mon, 16 Jan 2012 22:48:56 UTC +00:00], ["user_id", nil], ["workphone", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "companies" ("companyname", "companynotes", "created_at", "industry", "updated_at", "website") VALUES (?, ?, ?, ?, ?, ?)[0m  [["companyname", "Bonanza"], ["companynotes", nil], ["created_at", Mon, 16 Jan 2012 22:48:56 UTC +00:00], ["industry", nil], ["updated_at", Mon, 16 Jan 2012 22:48:56 UTC +00:00], ["website", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (14.7ms)[0m  INSERT INTO "contacts" ("created_at", "email", "facebook", "faxnumber", "firstname", "jobtitle", "lastname", "linkedin", "mainphone", "meetup_url", "meetups", "otherinfo", "twitter", "updated_at", "user_id", "workphone") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["email", nil], ["facebook", nil], ["faxnumber", nil], ["firstname", "John"], ["jobtitle", nil], ["lastname", "Wayne"], ["linkedin", nil], ["mainphone", nil], ["meetup_url", nil], ["meetups", nil], ["otherinfo", nil], ["twitter", nil], ["updated_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["user_id", nil], ["workphone", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "companies" ("companyname", "companynotes", "created_at", "industry", "updated_at", "website") VALUES (?, ?, ?, ?, ?, ?)[0m  [["companyname", "Bonanza"], ["companynotes", nil], ["created_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["industry", nil], ["updated_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["website", nil]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "jobs" ("careerfield", "company_id", "created_at", "dateappliedto", "dateofposting", "jobdescription", "jobtitle", "postinglink", "salary", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["careerfield", nil], ["company_id", 1], ["created_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["dateappliedto", nil], ["dateofposting", nil], ["jobdescription", nil], ["jobtitle", "Gunslinger"], ["postinglink", nil], ["salary", nil], ["updated_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "jobconnections" ("contact_id", "created_at", "job_id", "note", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["contact_id", 1], ["created_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00], ["job_id", 1], ["note", nil], ["updated_at", Mon, 16 Jan 2012 22:49:29 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35mJob Load (0.1ms)[0m  SELECT "jobs".* FROM "jobs" WHERE "jobs"."id" = 1 LIMIT 1

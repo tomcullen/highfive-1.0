@@ -22,9 +22,9 @@
     <td><%= job.dateappliedto.strftime("%m/%d/%Y") %></td>
     <td>
       <% job.contacts.each do|contact| %>
-        <%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(job) %>    
+        <p><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(job) %></p>    
       <% end %>
-      <%= link_to "Link Contact", new_jobconnection_url(job_id: job.id)  %>
+      
     </td>
     <% end %>
   </tr>

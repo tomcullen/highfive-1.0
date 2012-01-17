@@ -45,7 +45,7 @@ class JobsController < ApplicationController
     
     if @job.save  
       Myfirm.create user_id: current_user, company_id: company
-      redirect_to jobs_url
+      redirect_to job_url(@job)
     else
       render :new
     end

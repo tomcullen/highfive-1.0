@@ -1,15 +1,27 @@
 <h1>Jobs show</h1>
 
 
+<em><%= link_to "Link this Job to a Contact", new_jobconnection_url(job_id: @job.id) %></em>
 
 <p>Company: <%= link_to @job.company.companyname, company_url(@job.company) %></p>
 <p>Job Title: <%= @job.jobtitle %></p>
 <p>Job Description: <%= @job.jobdescription %></p>
+Contacts to this Job: 
+<% if @job.contacts.any? %>
+  <ul>
+    <% @job.contacts.each do |contact| %>
+    <li id="contact_list">
+      <%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %>
+    </li>
+    <% end %>
+  </ul>
+<% end %>
+
 <p>Posting Link: <%= link_to @job.postinglink, "http://#{@job.postinglink}" %></p>
 
-<p>Date of Posting: <%= @job.dateofposting.strftime("%m/%d/%Y") %></p>
 <p>Salary: <%= @job.salary %></p>
 <p>Career Field: <%= @job.careerfield %></p>
+<p>Date of Posting: <%= @job.dateofposting.strftime("%m/%d/%Y") %></p>
 <p>Date Applied to: <%= @job.dateappliedto.strftime("%m/%d/%Y") %></p>
 
 <%= link_to "Edit this Job Here", edit_job_url %>
