@@ -67,17 +67,16 @@
   </p>
 
   <p>
-    <strong>Meetup url:</strong>
+    <strong>Meetup Website:</strong>
     <%= link_to @contact.meetup_url, "http://#{@contact.meetup_url}" %>
   </p>
   <br />
   <p>
-    <strong>Otherinfo:</strong>
+    <strong>Other Info:</strong>
     <%= @contact.otherinfo %>
   </p>
 
 <div id="item_links">
-  <%= link_to 'Edit', edit_contact_path(@contact) %> | 
-  <%= link_to "Delete", contact_url, :method => :delete, confirm: "Are you sure you want to delete this contact?" %> | 
-  <%= link_to 'Back', contacts_path %>
+  <%= link_to 'Edit Contact', edit_contact_path(@contact) %> | 
+  <%= link_to "Delete Contact", contact_url, :method => :delete, confirm: "Are you sure you want to delete this contact?" %>
 </div>

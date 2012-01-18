@@ -31,7 +31,7 @@
     <td>
       <% if contact.jobs.any? %>
       <% contact.jobs.each do |job| %>
-      <p><%= link_to "#{job.jobtitle}", job_url(job) %></p>
+      <p><%= link_to "#{job.jobtitle}", job_url(job) %> at <%= link_to "#{job.company.companyname}", company_url(job.company) %></p>
       <% end %>
       <% end %>
       

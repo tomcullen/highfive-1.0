@@ -1,19 +1,30 @@
-<h1><%= @company.companyname %></h1>
+<div id="page_header">Information for Company: <%= @company.companyname %></div>
+<br />
 
 <p>
+  <strong>Website:</strong>
   <%= link_to @company.website, "http://#{@company.website}" unless @company.website.blank? %>
 </p>
-<p><%= @company.industry %></p>
-<p><%= @company.companynotes %></p>
+<p>
+  <strong>Industry:</strong>
+  <%= @company.industry %>
+</p>
 
-<h3>My <%= @company.companyname %> Contacts:</h3>
-<p><% @company.contacts.each do |contact| %>
+<p>
+  <strong>My Notes on <%= @company.companyname %>:</strong>
+  <%= @company.companynotes %>
+</p>
+
+<br />
+
+<p>
+  <strong>My <%= @company.companyname %> Contacts:</strong>
+  <% @company.contacts.each do |contact| %>
   <ul>  
-    <%= contact.firstname %>
-    <%= contact.lastname %>
+    <%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %>
   </ul>
-<% end %>
-</p>  
-<p><%= link_to "Edit Company", edit_company_url %> | 
-<%= link_to "Delete Comany", company_url, method: :delete %></p>
-  
+  <% end %>
+</p>
+
+<div id="item_links"><%= link_to "Edit Company", edit_company_url %> | 
+<%= link_to "Delete Comany", company_url, method: :delete %></div>
