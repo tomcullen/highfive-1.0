@@ -26,6 +26,18 @@
     <%= @contact.jobtitle %>
   </p>
   <br />
+  
+  <p>
+    <strong>Job Leads <%= @contact.firstname %> has given me:</strong>
+      <% @contact.jobs.each do |job| %>
+        <li id="contact_list">
+          <%= link_to job.jobtitle, job_url(job) %>
+        </li>
+    <% end %>
+  </p>
+
+  <br />
+  
   <p>
     <strong>Email:</strong>
     <%= @contact.email %>

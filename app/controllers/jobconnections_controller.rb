@@ -2,11 +2,11 @@ class JobconnectionsController < ApplicationController
   def new
     @jobconnection = Jobconnection.new
     if params[:job_id].present?
-      @contacts = current_user.contacts
+      @contacts = current_user.contacts.order("lastname ASC")
       @job = Job.find_by_id(params[:job_id])
       @jobconnection.job = @job
     elsif params[:contact_id].present?
-      @jobs = current_user.jobs
+      @jobs = current_user.jobs.order("jobtitle ASC")
       @contact = Contact.find_by_id(params[:contact_id])
       @jobconnection.contact = @contact
     end

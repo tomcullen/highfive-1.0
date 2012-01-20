@@ -14,4 +14,8 @@ class Job < ActiveRecord::Base
   validates :jobtitle,  :presence   => true,
                          :length     => { :maximum => 50 }
   validates_presence_of :company_id  
+  
+  def job_display
+    "#{jobtitle} @ #{company.companyname}"
+  end
 end

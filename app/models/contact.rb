@@ -19,8 +19,8 @@ class Contact < ActiveRecord::Base
   validates :lastname,  :presence   => true,
                     :length     => { :maximum => 50 }
 
-  validates :email, :format      => { :with => email_regex },
-                    :uniqueness  => {:case_sensitive => false}, allow_blank: true
+  validates :email, :format      => { :with => email_regex }, allow_blank: true
+                    # :uniqueness  => {:case_sensitive => false}
 
 
   validates :mainphone,   :format  => { :with => phone_regex }, allow_blank: true
@@ -29,9 +29,9 @@ class Contact < ActiveRecord::Base
   
   validates :workphone,   :format  => { :with => phone_regex }, allow_blank: true
   validates :faxnumber,   :format  => { :with => phone_regex }, allow_blank: true
-
-
   
+  def combined_name
+    "#{firstname} #{lastname}"
+  end
 
-  
 end
