@@ -18,10 +18,22 @@
 <br />
 
 <p>
+  <strong> My <%= @company.companyname %> Jobs:</strong>
+  <ul>
+  <% @company.jobs.each do |job| %>
+    <li> <%= link_to "#{job.jobtitle}", job_url(job) %></li>
+    <% end %>
+ </ul>
+</p>
+
+
+<br />
+
+<p>
   <strong>My <%= @company.companyname %> Contacts:</strong>
   <% @company.contacts.each do |contact| %>
   <ul>  
-    <%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %>
+    <li><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %></li>
   </ul>
   <% end %>
 </p>
