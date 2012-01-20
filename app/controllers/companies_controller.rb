@@ -11,7 +11,8 @@ class CompaniesController < ApplicationController
   end
 
   def index
-    @companies = current_user.companies.uniq.sort_by{|p| p.contacts.count}.reverse
+    @companies = current_user.companies
+    # .uniq.sort_by{|p| p.contacts.count}.reverse
   end
 
   def show
