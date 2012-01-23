@@ -9,9 +9,9 @@ layout nil
     @interested = Interested.new(params[:interested])
     
     if @interested.save
-    redirect_to new_interested_url, notice: "Thanks for Signing Up!"
+    redirect_to root_url, notice: "Thanks for Signing Up!"
   else
-    render :new
+    redirect_to root_url
   end
   end
 
