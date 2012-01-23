@@ -26,4 +26,7 @@ Jobconnection.destroy_all
 Jobconnection.create(job_id: '1', contact_id: '1')
 Jobconnection.create(job_id: '2', contact_id: '2')
 
+User.destroy_all
+User.create(email: 'test@codeacademy.org', password: 'test', password_confirmation: 'test')
+
 
