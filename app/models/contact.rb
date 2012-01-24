@@ -24,9 +24,6 @@ class Contact < ActiveRecord::Base
 
 
   validates :mainphone,   :format  => { :with => phone_regex }, allow_blank: true
-  
-  
-  
   validates :workphone,   :format  => { :with => phone_regex }, allow_blank: true
   validates :faxnumber,   :format  => { :with => phone_regex }, allow_blank: true
   

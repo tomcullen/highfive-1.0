@@ -36,21 +36,22 @@ class ContactsController < ApplicationController
 
   def update
     @contact = Contact.find(params[:id])
+    @contact.update_attributes(params[:contact])
 
     if params[:company].present?
       find_or_create_company(params[:company])
+      if Myfirm.find_by_user_id_and_company_id(current_user.id, @company.id) == nil
+        Myfirm.create user_id: current_user, :company_id => @company.id
+      end
+      if Contactcompanyjoin.find_by_contact_id_and_company_id(@contact.id, @company.id) == nil
+        Contactcompanyjoin.create contact_id: @contact.id, :company_id => @company.id
+      end
     end
 
-    if Contactcompanyjoin.find_by_contact_id_and_company_id(@contact.id, @company.id) == nil
-      Contactcompanyjoin.create contact_id: @contact.id, :company_id => @company.id
-    end
 
-    if Myfirm.find_by_user_id_and_company_id(current_user.id, @company.id) == nil
-      Myfirm.create user_id: current_user, :company_id => @company.id
-    end
 
     respond_to do |format|
-      if @contact.update_attributes(params[:contact])
+      if @contact.save
         format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
       else
         format.html { render action: "edit" }
