@@ -78,7 +78,7 @@ class ContactsController < ApplicationController
       @company = Company.find_by_companyname(company)
     else
       @company = Company.create :companyname => company
-      Myfirm.create user_id: current_user, :company_id => @company      
+      Myfirm.create user_id: current_user, :company_id => @company.id      
     end
     Contactcompanyjoin.create contact_id: @contact.id, :company_id => @company.id
   end

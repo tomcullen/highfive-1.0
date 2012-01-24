@@ -27,6 +27,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem "oauth-plugin", ">= 0.4.0.pre1"
 gem 'jquery-rails'
 gem 'rails3-jquery-autocomplete', :git => 'https://github.com/gmassanek/rails3-jquery-autocomplete.git'
 
