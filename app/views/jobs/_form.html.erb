@@ -15,7 +15,7 @@
 
 <ul>Company<%= autocomplete_field_tag 'company', "", autocomplete_company_companyname_path %></ul>
 <ul>Job Title<%= f.text_field :jobtitle %></ul>
-<ul>Job Description<%= f.text_field :jobdescription %></ul>
+<ul>Job Description<%= f.text_area :jobdescription %></ul>
 <ul>Posting Link<%= f.text_field :postinglink %></ul>
 <ul>Date of Posting<%= f.date_select :dateofposting %></ul>
 <ul>Salary<%= f.text_field :salary %></ul>

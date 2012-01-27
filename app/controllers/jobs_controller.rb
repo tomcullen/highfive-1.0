@@ -32,23 +32,24 @@ class JobsController < ApplicationController
     @job.destroy
     redirect_to jobs_url, notice: "Job deleted"
   end
-
+  
   def create
-    if Company.find_by_companyname(params[:company]).present?
-      company = Company.find_by_companyname(params[:company])
-    else
-      company = Company.create :companyname => params[:company]
-    end
     @job = Job.new(params[:job])
-    @job.company = company
     @job.user = current_user
+
+    @company = new_job_company_assn(params[:company])
+
+    @job.company_id = @company.id
     
-    if @job.save  
-      Myfirm.create user_id: current_user, company_id: company
+    if @job.save 
+      # if params[:company].present?
+      #   new_job_company_assn(params[:company])
+      # end 
       redirect_to job_url(@job)
     else
       render :new
     end
+  
   end
 
   def update
@@ -58,6 +59,19 @@ class JobsController < ApplicationController
     redirect_to job_url
   end
   
+  private
+   
+   def new_job_company_assn(company)  
+     if Company.find_by_companyname(company)
+       @company = Company.find_by_companyname(company)
+     else
+       @company = Company.create :companyname => company
+     end
+       Myfirm.create user_id: current_user.id, :company_id => @company.id      
+     # Jobconnection.create job_id: @job.id, :company_id => @company.id
+     
+     return @company
+   end
 
 
 end

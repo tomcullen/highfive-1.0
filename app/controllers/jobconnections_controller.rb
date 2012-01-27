@@ -12,18 +12,21 @@ class JobconnectionsController < ApplicationController
       @contact = Contact.find_by_id(params[:contact_id])
       @jobconnection.contact = @contact
     end
-      
+
   end
-  
-  
-  
+
+
+
   def create
     job = params[:jobconnection][:job_id]
     contact = params[:jobconnection][:contact_id]
+    # @job = Job.find_by_id(params[:job_id])
+    # @company. = Company.find
     if contact.empty? || job.empty?
       redirect_to new_jobconnection_url(params[:jobconnection]), notice: "Pick something from the dropdown!"
     elsif
       Jobconnection.find_by_contact_id(contact) && Jobconnection.find_by_job_id(job)
+      # Myfirm.create user_id: current_user.id, :company_id => @company.company_id
       redirect_to new_jobconnection_url(params[:jobconnection]), notice: "That Job-Contact association already exists"
     elsif
       @jobconnection = Jobconnection.new(params[:jobconnection])
@@ -31,4 +34,6 @@ class JobconnectionsController < ApplicationController
       redirect_to job_url(job)
     end
   end
+
+
 end

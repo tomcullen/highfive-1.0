@@ -3,19 +3,27 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :logged_in?
 
   def require_user
-    if session[:user_id] ==nil
+    if !session[:user_id].present?
       redirect_to sessions_new_url, :notice => "Please Sign in to HIGH FIVE first!"
-      return true
+      # return true
     end
-    return false
+    # return false
   end
 
   def current_user
     @current_user ||= User.find_by_id(session[:user_id])
+    # User.find(session[:user_id])
   end
 
+  
   def logged_in?
     current_user != nil
+  end
+  
+  def redirect_if_signed_in?
+    if logged_in?
+      redirect_to contacts_url
+    end
   end
 
 

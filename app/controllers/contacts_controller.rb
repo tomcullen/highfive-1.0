@@ -41,7 +41,7 @@ class ContactsController < ApplicationController
     if params[:company].present?
       find_or_create_company(params[:company])
       if Myfirm.find_by_user_id_and_company_id(current_user.id, @company.id) == nil
-        Myfirm.create user_id: current_user, :company_id => @company.id
+        Myfirm.create user_id: current_user.id, :company_id => @company.id
       end
       if Contactcompanyjoin.find_by_contact_id_and_company_id(@contact.id, @company.id) == nil
         Contactcompanyjoin.create contact_id: @contact.id, :company_id => @company.id
@@ -73,14 +73,15 @@ class ContactsController < ApplicationController
       redirect_to contacts_url, notice: "You don't have access to that page"
     end
   end
-  
+
   def new_contact_company_assn(company)  
     if Company.find_by_companyname(company)
       @company = Company.find_by_companyname(company)
     else
       @company = Company.create :companyname => company
-      Myfirm.create user_id: current_user, :company_id => @company.id      
     end
+    
+    my_firm = Myfirm.create user_id: current_user.id, :company_id => @company.id
     Contactcompanyjoin.create contact_id: @contact.id, :company_id => @company.id
   end
 
@@ -89,7 +90,7 @@ class ContactsController < ApplicationController
       @company = Company.find_by_companyname(name)
     else
       @company = Company.create :companyname => name
-    end    
+    end
   end
-  
+
 end

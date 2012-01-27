@@ -21,14 +21,15 @@ class CompaniesController < ApplicationController
 
   def create
     @company = Company.new(params[:company])
-
     if @company.save
-      Myfirm.create :user_id => current_user, :company_id => @company.id
+      # current_user.myfirms.create(company_id: @company.id)
+      Myfirm.create user_id: current_user.id, :company_id => @company.id
+      
+      # firm = Myfirm.new :user_id => current_user.id, :company_id => @company.id
       redirect_to companies_url, notice: "company created"
     else
       render :new
     end
-
   end
 
   def update
@@ -43,6 +44,5 @@ class CompaniesController < ApplicationController
     @company.destroy
     redirect_to companies_url
   end
-
 
 end
