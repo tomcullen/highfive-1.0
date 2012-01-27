@@ -21,6 +21,10 @@ class Company < ActiveRecord::Base
   #   end
   # end
 
-
+  # def my_companies_contacts
+  #   current_user.contacts.select do |contact|
+  #     contact.companies.include? @company
+  #   end
+  # end
 
 end

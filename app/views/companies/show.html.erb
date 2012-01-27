@@ -29,14 +29,30 @@
 
 <br />
 
-<p>
+<!-- <p>
   <strong>My <%= @company.companyname %> Contacts:</strong>
   <% @company.contacts.each do |contact| %>
   <ul>  
     <li><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %></li>
   </ul>
   <% end %>
+</p> -->
+
+<br />
+
+<p>
+  <strong>My <%= @company.companyname %> Contacts:</strong>
+  <% @my_companies_contacts.each do |contact| %>
+  <%= link_to "#{contact.firstname} #{contact.lastname}" %>
+  <% end %>
+
+  <ul>  
+  </ul>
 </p>
+<!-- user.contacts.select do |contact| contact.companies.include? company end -->
+<br />
+
+
 
 <div id="item_links"><%= link_to "Edit Company", edit_company_url %> | 
-<%= link_to "Delete Comany", company_url, method: :delete %></div>
+<%= link_to "Delete Company", company_url, method: :delete %></div>

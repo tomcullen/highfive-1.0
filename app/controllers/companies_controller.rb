@@ -16,7 +16,9 @@ class CompaniesController < ApplicationController
 
   def show
     @company = Company.find(params[:id])
-
+    # @job = current_user.jobs.find(params[:id])
+    @my_companies_contacts = current_user.contacts.select do |contact| contact.companies.include? @company end
+    # @my_companies_jobs = current_user.jobs.select do |job| job.companies.include? @job end
   end
 
   def create
