@@ -19,11 +19,12 @@
 
 <p>
   <strong> My <%= @company.companyname %> Jobs:</strong>
+
+  <% @my_companies_jobs.each do |job| %>
   <ul>
-  <% @company.jobs.each do |job| %>
     <li> <%= link_to "#{job.jobtitle}", job_url(job) %></li>
-    <% end %>
  </ul>
+ <% end %>
 </p>
 
 
@@ -43,12 +44,12 @@
 <p>
   <strong>My <%= @company.companyname %> Contacts:</strong>
   <% @my_companies_contacts.each do |contact| %>
-  <%= link_to "#{contact.firstname} #{contact.lastname}" %>
-  <% end %>
-
   <ul>  
+    <%= link_to "#{contact.firstname} #{contact.lastname}" %>
   </ul>
+    <% end %>
 </p>
+
 <!-- user.contacts.select do |contact| contact.companies.include? company end -->
 <br />
 
