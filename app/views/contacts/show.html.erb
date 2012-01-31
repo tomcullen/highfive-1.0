@@ -16,11 +16,12 @@
   <p>
     <strong>Company Name:</strong>
     <% @contact.companies.each do |company| %>
-    <%= link_to company.companyname, company_url(company) %></td>
-  
+   <ul>
+      <li><%= link_to company.companyname, company_url(company) %></td></li>
+    </ul>  
     <% end %>
   </p>
-
+  <br />
   <p>
     <strong>Jobtitle:</strong>
     <%= @contact.jobtitle %>

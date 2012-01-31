@@ -18,7 +18,7 @@ Highfive10::Application.routes.draw do
   
   get 'jobs/autocomplete_company_companyname', controller: "jobs", action: "autocomplete_company_companyname", as: :autocomplete_company_companyname
 # controller: "jobs", action: "autocomplete_companyname",
-  resources :companies
+  resources :companies, :except => :destroy
   resources :jobs
   resources :jobconnections
   resources :contacts
