@@ -28,6 +28,8 @@ Highfive10::Application.routes.draw do
 
   get "main/new"
   get "main/show"
+                                      
+  get "blogs/state_unemployment_links"
   
   get "sessions/new"
   post "sessions/create"
