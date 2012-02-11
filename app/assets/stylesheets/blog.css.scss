@@ -2,27 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*
-#container {
-	width: 960px;
-	margin: 0 auto;	
-}   
 
 
-ul li {
-  font-size: 12px;
-  list-style: none; 
+ul {
+  font-size: 15px;
+/*  border: 1px solid #333;*/
+  margin: 1px;  
   } 
+ 
+ #column1{
+ 	float: left;
  }
+ 
+#column2{
+	float: left;
+}
 
+#column3{
+	float: left;
+}
 
-
-#column1 {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
-  background-color: white;
-  font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-  font-size: 13px;
-  color: #333;
-}                      */
+#column4{
+	float: left;
+}
+        
