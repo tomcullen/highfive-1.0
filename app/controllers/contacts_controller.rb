@@ -5,12 +5,20 @@ class ContactsController < ApplicationController
   def populate
     client = LinkedIn::Client.new("54biq7g6ggjo", "hPbyUdevmHxqvGup")
     client.authorize_from_access(current_user.atoken, current_user.asecret)
-    client.connections["all"].each do |connection|
-      current_user.contacts.create(firstname: connection["first_name"], lastname: connection["last_name"], jobtitle: connection["headline"])
+    client.connections.all.each do |connection|
+      id = connection["id"] if connection["id"] != "private"
+      profile = client.profile(id: id)
+      positions = client.profile(id: id, fields: ["positions"])["positions"].all
+      title = positions.first.title
+      company = positions.first.company.name
+      @contact = current_user.contacts.create(firstname: profile.first_name, lastname: profile.last_name, jobtitle: title)
+      if @contact.save
+        new_contact_company_assn(company)      
+      end
     end
     redirect_to contacts_url, notice: "Successfully Populated!"
   end
-    
+      
   def index
     @contact = Contact.new
     @contacts = current_user.contacts.sort_by{|p| p.lastname.downcase}

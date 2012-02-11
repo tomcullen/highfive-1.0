@@ -45,7 +45,7 @@
   <strong>My <%= @company.companyname %> Contacts:</strong>
   <% @my_companies_contacts.each do |contact| %>
   <ul>  
-    <%= link_to "#{contact.firstname} #{contact.lastname}" %>
+    <%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %>
   </ul>
     <% end %>
 </p>
