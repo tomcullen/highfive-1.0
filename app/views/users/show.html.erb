@@ -15,3 +15,12 @@
   <strong>Email</strong>: 
   <%= @user.email %>
 </p>
+<p>
+  <% if @user.atoken && @user.asecret %>
+    You have already Linked-in!
+  <% else %>
+    <%= link_to "Please link-in!", linkedin_url %>
+  <% end %>
+</p>
+
+asl;kdfjadkls;jf

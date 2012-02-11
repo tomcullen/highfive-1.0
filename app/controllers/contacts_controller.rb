@@ -1,6 +1,15 @@
 class ContactsController < ApplicationController
   before_filter :require_user
   before_filter :set_contact, :only => [:edit, :show, :destroy]
+
+  def populate
+    client = LinkedIn::Client.new("54biq7g6ggjo", "hPbyUdevmHxqvGup")
+    client.authorize_from_access(current_user.atoken, current_user.asecret)
+    client.connections["all"].each do |connection|
+      current_user.contacts.create(firstname: connection["first_name"], lastname: connection["last_name"], jobtitle: connection["headline"])
+    end
+    redirect_to contacts_url, notice: "Successfully Populated!"
+  end
     
   def index
     @contact = Contact.new
@@ -92,5 +101,7 @@ class ContactsController < ApplicationController
       @company = Company.create :companyname => name
     end
   end
+  
+
 
 end

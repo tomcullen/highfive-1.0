@@ -18,9 +18,8 @@ class AuthController < ApplicationController
         session[:asecret] = asecret
       else
         client.authorize_from_access(session[:atoken], session[:asecret])
-      end
-      @profile = client.profile
-      @connections = client.connections
+        end
+      current_user.update_attributes(atoken: session[:atoken], asecret: session[:asecret])
       redirect_to contacts_url
     end
 
