@@ -1,5 +1,8 @@
 Highfive10::Application.routes.draw do
 
+  get "auth/index", as: "linkedin"
+  get "auth/callback"
+
   resources :oauth_clients
 
   match '/oauth/test_request',  :to => 'oauth#test_request',  :as => :test_request

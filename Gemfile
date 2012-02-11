@@ -7,6 +7,8 @@ gem 'rails', '3.1.2'
 
 gem 'thin'
 
+    gem 'linkedin'
+
 group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
