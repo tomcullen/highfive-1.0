@@ -8,36 +8,49 @@
 
 <table width="600px">
   <tr>
-    
     <th>Name</th>
     <th>Companies</th>
     <th>Current Title</th>
     <th>Phone</th>
     <th>Job Leads</th>
+    <th>State</th>
+    <th>Action</th>
   </tr>
-  
-
-<% @contacts.each do |contact| %>
-  <tr>
-    <td><%= link_to "#{contact.firstname} #{contact.lastname}", contact_url(contact) %></td>
-    
-    <td>
+  <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= link_to "#{contact.lastname}, #{contact.firstname}", contact_url(contact) %></td>
+      <td>
         <% contact.companies.each do |company| %>
           <p class="contact_companies"><%= link_to company.companyname, company_url(company) %></p>
         <% end %>
-    </td>
-    <td><%= contact.jobtitle %></td>
-    <td><%= contact.mainphone %></td>
-    <td>
-      <% if contact.jobs.any? %>
-      <% contact.jobs.each do |job| %>
-      <p><%= link_to "#{job.jobtitle}", job_url(job) %> at <%= link_to "#{job.company.companyname}", company_url(job.company) %></p>
-      <% end %>
-      <% end %>
-      
-    </td>
-
-
+      </td>
+      <td><%= contact.jobtitle %></td>
+      <td><%= contact.mainphone %></td>
+      <td>
+        <% if contact.jobs.any? %>
+          <% contact.jobs.each do |job| %>
+            <p><%= link_to "#{job.jobtitle}", job_url(job) %> at <%= link_to "#{job.company.companyname}", company_url(job.company) %></p>
+          <% end %>
+        <% end %>
+      </td>
+      <td>
+        <% if contact.state == "d" %>
+          <%= link_to "A", switch_url(contact, choice: "a") %>
+          <%= link_to "B", switch_url(contact, choice: "b") %>
+          <%= link_to "C", switch_url(contact, choice: "c") %>
+        <% else %>
+          <%= contact.state %>
+        <% end %>
+      </td>
+      <td>
+        <% if contact.state == "a" %>
+          <%= link_to "Proceed", new_event_url(id: contact) %>
+        <% elsif contact.state == "b" %>
+          <%= link_to "Change", revert_url(contact) %>
+        <% elsif contact.state == "c" %>
+          <%= link_to "Change", revert_url(contact) %>
+        <% end %>
+      </td>
   </tr>
 <% end %>
 </table>

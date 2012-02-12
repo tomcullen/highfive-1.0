@@ -1,5 +1,10 @@
 Highfive10::Application.routes.draw do
+  
+  resources :events
 
+  get "contacts/switch/:id", controller: "contacts", action: "switch", as: "switch"
+  get "contacts/revert/:id", controller: "contacts", action: "revert", as: "revert"
+  
   get "auth/index", as: "linkedin"
   get "auth/callback"
   

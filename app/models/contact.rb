@@ -1,7 +1,7 @@
 class Contact < ActiveRecord::Base
   belongs_to :user
  
-  
+  has_many :events
   has_many :jobconnections
   has_many :jobs, through: :jobconnections
   

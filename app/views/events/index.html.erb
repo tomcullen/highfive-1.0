@@ -1,0 +1,51 @@
+<h1>Your events</h1>
+
+<h2>Active Events</h2>
+
+<table>
+  <tr>
+    <th> Contact Name </th>
+    <th> Meeting Date</th>
+    <th> Note</th>
+    <th> Plan</th>
+    <th> State</th>
+  </tr>
+  
+
+  <% @active_events.each do |event|  %>
+    <tr>
+      <td><%= event.contact.combined_name %></td>
+      <td><%= event.meeting_date.strftime("%h:%m%p") %></td>
+      <td><%= event.notes %></td>
+      <td><%= event.plan %></td>
+      <td><%= event.state %></td>
+    </tr>
+  <% end %>
+
+</table>
+
+<br />
+
+<h2>Inactive Events</h2>
+
+<table>
+  <tr>
+    <th> Contact Name </th>
+    <th> Meeting Date</th>
+    <th> Note</th>
+    <th> Plan</th>
+    <th> State</th>
+  </tr>
+  
+
+  <% @inactive_events.each do |event|  %>
+    <tr>
+      <td><%= event.contact.combined_name %></td>
+      <td><%= event.meeting_date %></td>
+      <td><%= event.notes %></td>
+      <td><%= event.plan %></td>
+      <td><%= event.state %></td>
+    </tr>
+  <% end %>
+
+</table>

@@ -2,18 +2,37 @@ class ContactsController < ApplicationController
   before_filter :require_user
   before_filter :set_contact, :only => [:edit, :show, :destroy]
 
+  def switch
+    if params[:choice] == "a"
+      Contact.find_by_id(params[:id]).update_attributes(state: "a")
+    elsif params[:choice] == "b"                                   
+      Contact.find_by_id(params[:id]).update_attributes(state: "b")  
+    elsif params[:choice] == "c"                                   
+      Contact.find_by_id(params[:id]).update_attributes(state: "c")
+    end
+    redirect_to contacts_url
+  end
+  
+  
+  def revert
+    Contact.find_by_id(params[:id]).update_attributes(state: "d")
+    redirect_to contacts_url
+  end
+
   def populate
     client = LinkedIn::Client.new("54biq7g6ggjo", "hPbyUdevmHxqvGup")
     client.authorize_from_access(current_user.atoken, current_user.asecret)
     client.connections.all.each do |connection|
-      id = connection["id"] if connection["id"] != "private"
-      profile = client.profile(id: id)
-      positions = client.profile(id: id, fields: ["positions"])["positions"].all
-      title = positions.first.title
-      company = positions.first.company.name
-      @contact = current_user.contacts.create(firstname: profile.first_name, lastname: profile.last_name, jobtitle: title)
-      if @contact.save
-        new_contact_company_assn(company)      
+      if connection["id"] != "private"
+        id = connection["id"]
+        profile = client.profile(id: id)
+        positions = client.profile(id: id, fields: ["positions"])["positions"].all rescue nil
+        title = positions.first.title rescue ""
+        company = positions.first.company.name rescue ""
+        @contact = current_user.contacts.create(firstname: profile.first_name, lastname: profile.last_name, jobtitle: title)
+        if @contact.save
+          new_contact_company_assn(company) if !company.nil?
+        end
       end
     end
     redirect_to contacts_url, notice: "Successfully Populated!"
@@ -22,7 +41,6 @@ class ContactsController < ApplicationController
   def index
     @contact = Contact.new
     @contacts = current_user.contacts.sort_by{|p| p.lastname.downcase}
-
   end
 
   def show
