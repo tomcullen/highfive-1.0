@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
   
+  has_many :user_career_joins
+  has_many :careers, through: :user_career_joins
   has_secure_password
   
   has_many :events

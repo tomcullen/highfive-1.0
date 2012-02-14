@@ -20,6 +20,18 @@ class EventsController < ApplicationController
   end
 
   def edit
+    @event = Event.find_by_id(params[:id])
+  end
+  
+  def update
+    event = Event.find_by_id(params[:id])
+    event.update_attributes(params[:event])
+    if params[:commit] == "Edit Event"
+      redirect_to events_url
+    elsif params[:commit] == "Proceed to Next Event"
+      event.update_attributes(state: "inactive")
+      redirect_to new_event_url(id: event.contact), notice: "Your event with #{event.contact.combined_name} is complete.  Create yoru next one with #{event.contact.combined_name} Now!"
+    end
   end
 
 end

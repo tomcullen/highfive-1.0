@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
   def switch
     if params[:choice] == "a"
       Contact.find_by_id(params[:id]).update_attributes(state: "a")
+      current_user.events.create()
     elsif params[:choice] == "b"                                   
       Contact.find_by_id(params[:id]).update_attributes(state: "b")  
     elsif params[:choice] == "c"                                   
@@ -29,9 +30,10 @@ class ContactsController < ApplicationController
         positions = client.profile(id: id, fields: ["positions"])["positions"].all rescue nil
         title = positions.first.title rescue ""
         company = positions.first.company.name rescue ""
-        @contact = current_user.contacts.create(firstname: profile.first_name, lastname: profile.last_name, jobtitle: title)
+        industry = positions.first.company.industry rescue ""
+        @contact = current_user.contacts.create(firstname: profile.first_name, lastname: profile.last_name, jobtitle: title, state: "d")
         if @contact.save
-          new_contact_company_assn(company) if !company.nil?
+          new_contact_company_assn(company, industry) if !company.nil?
         end
       end
     end
@@ -109,11 +111,11 @@ class ContactsController < ApplicationController
     end
   end
 
-  def new_contact_company_assn(company)  
+  def new_contact_company_assn(company, *industry)  
     if Company.find_by_companyname(company)
       @company = Company.find_by_companyname(company)
     else
-      @company = Company.create :companyname => company
+      @company = Company.create :companyname => company, :industry => (industry.first rescue nil)
     end
     
     my_firm = Myfirm.create user_id: current_user.id, :company_id => @company.id

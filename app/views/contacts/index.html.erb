@@ -21,7 +21,7 @@
       <td><%= link_to "#{contact.lastname}, #{contact.firstname}", contact_url(contact) %></td>
       <td>
         <% contact.companies.each do |company| %>
-          <p class="contact_companies"><%= link_to company.companyname, company_url(company) %></p>
+          <p class="contact_companies"><%= link_to "#{company.companyname}(#{company.industry})", company_url(company) %></p>
         <% end %>
       </td>
       <td><%= contact.jobtitle %></td>

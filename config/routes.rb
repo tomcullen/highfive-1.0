@@ -19,7 +19,8 @@ Highfive10::Application.routes.draw do
   resources :jobconnections
   resources :contacts
   resources :users
-  
+  get "users/:id/edit_profile", controller: "users", action: "edit_profile", as: "edit_profile"
+    
   resources :interesteds
 
   get "main/new"

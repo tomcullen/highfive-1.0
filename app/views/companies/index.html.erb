@@ -13,7 +13,7 @@
   <tr>
     <td><%= link_to f.companyname, company_url(f) %></td>
     <td><%= f.industry %></td>
-    <td align="center"><%= f.contacts.count %></td>
+    <td align="center"><%= f.contacts.select do |contact| contact.user == current_user end.count %></td>
     <% end %>
   </tr>
 

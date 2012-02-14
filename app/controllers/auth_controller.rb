@@ -19,8 +19,24 @@ class AuthController < ApplicationController
       else
         client.authorize_from_access(session[:atoken], session[:asecret])
         end
-      current_user.update_attributes(atoken: session[:atoken], asecret: session[:asecret])
-      redirect_to contacts_url
+      if logged_in?
+        current_user.update_attributes(atoken: session[:atoken], asecret: session[:asecret])
+        redirect_to contacts_url
+      elsif (user = User.find_by_atoken(session[:atoken])) && user.asecret == session[:asecret]
+        session[:user_id] = user.id
+        redirect_to contacts_url
+      else
+        first_name = client.profile.first_name
+        last_name = client.profile.last_name
+        @user = User.new(firstname: first_name, lastname: last_name, password: "temporary", password_confirmation: "temporary", email: "your@email.com", asecret: session[:asecret], atoken: session[:atoken])
+        if @user.save
+          session[:user_id] = @user.id
+          redirect_to edit_profile_url(@user)
+        else
+          render :new
+        end
+      end
+
     end
 
 end

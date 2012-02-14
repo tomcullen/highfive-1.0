@@ -12,6 +12,7 @@ class CompaniesController < ApplicationController
 
   def index
     @companies = current_user.companies.uniq.sort_by{|p| p.contacts.count}.reverse
+   
   end
 
   def show
@@ -23,6 +24,7 @@ class CompaniesController < ApplicationController
   end
 
   def create
+    raise params[:company].inspect
     @company = Company.new(params[:company])
     if @company.save
       # current_user.myfirms.create(company_id: @company.id)

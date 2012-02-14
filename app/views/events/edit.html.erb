@@ -1,2 +1,9 @@
-<h1>Events#edit</h1>
-<p>Find me in app/views/events/edit.html.erb</p>
+
+Edit this event here.
+<%= form_for @event do |f| %>
+  <%= f.date_select :meeting_date %><br />
+  Add more notes about this meeting here:<br />
+  <%= f.text_area :notes %><br />
+  <%= f.submit "Edit Event"%><br />
+  <%= f.submit "Proceed to Next Event"%>
+<% end %>
