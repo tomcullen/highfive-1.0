@@ -37,7 +37,7 @@ class ContactsController < ApplicationController
         end
       end
     end
-    redirect_to contacts_url, notice: "Successfully Populated!"
+    redirect_to new_career_url(current_user), notice: "Successfully Populated!"
   end
       
   def index

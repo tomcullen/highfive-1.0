@@ -37,9 +37,9 @@ Career.create(title: "Carpenter", category: "Construction and Extraction")
 Career.create(title: "Cement Mason and Concrete Finisher", category: "Construction and Extraction")
 Career.create(title: "Drywall and Ceiling Tile Installer", category: "Construction and Extraction")
 Career.create(title: "Electrician", category: "Construction and Extraction")
-Career.create(title: "Computer Software Engineer, Applications", category: " Computer and Mathematical")
-Career.create(title: "Computer Software Engineer, Systems Software", category: " Computer and Mathematical")
-Career.create(title: "Mathematical Technician", category: " Computer and Mathematical")
-Career.create(title: "Database Administrator", category: " Computer and Mathematical")
+Career.create(title: "Computer Software Engineer, Applications", category: "Computer and Mathematical")
+Career.create(title: "Computer Software Engineer, Systems Software", category: "Computer and Mathematical")
+Career.create(title: "Mathematical Technician", category: "Computer and Mathematical")
+Career.create(title: "Database Administrator", category: "Computer and Mathematical")
                        
 

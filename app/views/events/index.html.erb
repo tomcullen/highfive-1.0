@@ -1,6 +1,20 @@
-<h1>Your events</h1>
+<h1>TO DO LIST</h1>
 
-<h2>Active Events</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+===============
+
+<h2>Active Tasks</h2>
 
 <table>
   <tr>
@@ -15,10 +29,10 @@
 
   <% @active_events.each do |event|  %>
     <tr>
-      <td><%= event.contact.combined_name %></td>
-      <td><%= event.meeting_date.strftime("%m/%d/%Y") %></td>
+      <td><%= event.contact.combined_name rescue "" %></td>
+      <td><!-- <%#= event.meeting_date.strftime("%m/%d/%Y") %> --></td>
       <td><%= event.notes %></td>
-      <td><%= event.plan %></td>
+      <td><%= link_to event.plan, contacts_url %></td>
       <td><%= event.state %></td>
       <td><%= link_to "Update", edit_event_url(event) %></td>
     </tr>
@@ -42,8 +56,8 @@
 
   <% @inactive_events.each do |event|  %>
     <tr>
-      <td><%= event.contact.combined_name %></td>
-      <td><%= event.meeting_date.strftime("%m/%d/%Y") %></td>
+      <td><%= event.contact.combined_name rescue "" %></td>
+      <td><!-- <%#= event.meeting_date.strftime("%m/%d/%Y") %> --></td>
       <td><%= event.notes %></td>
       <td><%= event.plan %></td>
       <td><%= event.state %></td>

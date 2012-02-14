@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
   def index
+    current_user.events.create(plan: "Add and Organize your LinkedIn Contacts", state: "active") if current_user.events.count == 0 
     @active_events = current_user.events.where(state: "active")
     @inactive_events = current_user.events.where(state: "inactive")
   end

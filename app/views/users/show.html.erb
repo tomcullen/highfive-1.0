@@ -23,3 +23,15 @@
   <% end %>
 </p>
 
+<strong>Careers you want:</strong>
+<p>
+  <% @user.careers.each do |career| %>
+    <%= career.title %> in <%= career.category %><br />
+  <% end %>
+  <%= link_to "Add a Career", new_career_url %>
+</p>
+
+<strong>Location you prefer:</strong>
+<p><%= current_user.location %></p>
+
+<p><%= link_to "START YOUR JOB SEARCH!", events_url %></p>

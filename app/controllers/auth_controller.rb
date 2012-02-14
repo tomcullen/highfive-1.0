@@ -31,7 +31,7 @@ class AuthController < ApplicationController
         @user = User.new(firstname: first_name, lastname: last_name, password: "temporary", password_confirmation: "temporary", email: "your@email.com", asecret: session[:asecret], atoken: session[:atoken])
         if @user.save
           session[:user_id] = @user.id
-          redirect_to edit_profile_url(@user)
+          redirect_to populate_url
         else
           render :new
         end

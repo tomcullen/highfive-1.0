@@ -1,7 +1,16 @@
 class UsersController < ApplicationController
   
-  def edit_profile
+  def new_career
+    @user_career_join = UserCareerJoin.new
     @user = current_user
+  end
+  
+  def create_career
+    @user_career_join = UserCareerJoin.new(params[:user_career_join])
+    @user_career_join.user = current_user
+    @user_career_join.save
+    current_user.update_attributes(location: params[:location])
+    redirect_to user_url(current_user)
   end
 
   def new

@@ -1,0 +1,19 @@
+<div id="page_header">Complete Your Profile!</div>
+
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2>Whoops! There were <%= pluralize(@user.errors.count, "error") %> creating your account:</h2>
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for(@user_career_join, url: create_career_url) do |f| %>
+  <p>What job do you want?</p>
+  <p><%= f.collection_select :career_id, Career.all, :id, :proper_name %></p>
+  <p><%= select_tag :location, options_for_select(["Chicago, IL", "New York, NY", "San Francisco, CA"]) %></p>
+  <p><%= f.submit "Add Career"%></p>
+<% end %>

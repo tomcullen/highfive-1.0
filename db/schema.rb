@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120214002447) do
+ActiveRecord::Schema.define(:version => 20120214020335) do
 
   create_table "careers", :force => true do |t|
     t.string   "title"
@@ -159,6 +159,7 @@ ActiveRecord::Schema.define(:version => 20120214002447) do
     t.datetime "updated_at"
     t.string   "atoken"
     t.string   "asecret"
+    t.string   "location"
   end
 
 end
