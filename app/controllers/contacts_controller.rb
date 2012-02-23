@@ -5,7 +5,6 @@ class ContactsController < ApplicationController
   def switch
     if params[:choice] == "a"
       Contact.find_by_id(params[:id]).update_attributes(state: "a")
-      current_user.events.create()
     elsif params[:choice] == "b"                                   
       Contact.find_by_id(params[:id]).update_attributes(state: "b")  
     elsif params[:choice] == "c"                                   
@@ -21,22 +20,7 @@ class ContactsController < ApplicationController
   end
 
   def populate
-    client = LinkedIn::Client.new("54biq7g6ggjo", "hPbyUdevmHxqvGup")
-    client.authorize_from_access(current_user.atoken, current_user.asecret)
-    client.connections.all.each do |connection|
-      if connection["id"] != "private"
-        id = connection["id"]
-        profile = client.profile(id: id)
-        positions = client.profile(id: id, fields: ["positions"])["positions"].all rescue nil
-        title = positions.first.title rescue ""
-        company = positions.first.company.name rescue ""
-        industry = positions.first.company.industry rescue ""
-        @contact = current_user.contacts.create(firstname: profile.first_name, lastname: profile.last_name, jobtitle: title, state: "d")
-        if @contact.save
-          new_contact_company_assn(company, industry) if !company.nil?
-        end
-      end
-    end
+    Resque.enqueue(LinkedinWorker, current_user.id)
     redirect_to new_career_url(current_user), notice: "Successfully Populated!"
   end
       

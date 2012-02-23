@@ -1,6 +1,6 @@
+</br>
 <div id="page_header"><%= @user.firstname %></div>
-
-<%= link_to "Edit Profile", edit_user_url(@user) %>
+</br>
 <p>
   <strong>First Name</strong>: 
   <%= @user.firstname %>
@@ -10,28 +10,33 @@
   <strong>Last Name</strong>: 
   <%= @user.lastname %>
 </p>
-
+</br>
 <p>
   <strong>Email</strong>: 
   <%= @user.email %>
 </p>
-<p>
+
+<!-- <p>
   <% if @user.atoken && @user.asecret %>
     You have already Linked-in!
   <% else %>
     <%= link_to "Please link-in!", linkedin_url %>
   <% end %>
-</p>
-
+</p> -->
+</br></br>
 <strong>Careers you want:</strong>
 <p>
   <% @user.careers.each do |career| %>
     <%= career.title %> in <%= career.category %><br />
   <% end %>
-  <%= link_to "Add a Career", new_career_url %>
+  <%= button_to "Add a Career", new_career_url, method: "get" %>
 </p>
-
+</br>
 <strong>Location you prefer:</strong>
 <p><%= current_user.location %></p>
+</br>
+<%= link_to "Edit Profile", edit_user_url(@user) %>
+</br>
+</br>
 
-<p><%= link_to "START YOUR JOB SEARCH!", events_url %></p>
+<div id="page_header"><%= button_to "START YOUR JOB SEARCH NOW!", contacts_url, method: "get" %></div>

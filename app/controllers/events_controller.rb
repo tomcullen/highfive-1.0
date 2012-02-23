@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+before_filter:require_user
   def index
     current_user.events.create(plan: "Add and Organize your LinkedIn Contacts", state: "active") if current_user.events.count == 0 
     @active_events = current_user.events.where(state: "active")
@@ -11,7 +12,7 @@ class EventsController < ApplicationController
   def new
     @event = Event.new
   end
-  
+
   def create
     @event = Event.new(params[:event])
     @event.user = current_user
