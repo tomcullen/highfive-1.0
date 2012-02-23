@@ -27,4 +27,6 @@ Highfive10::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  ENV["REDISTOGO_URL"] = 'redis://cullentj:10a2de32981dd1dc7eec1842bfdd548c@cod.redistogo.com:9180/'
 end
